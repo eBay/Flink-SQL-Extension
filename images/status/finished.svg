@@ -1,0 +1,15 @@
+<svg width="288" height="288" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g fill="#396849" id="SvgjsG1023">
+   <svg fill="#1890ff" id="svg_1" viewBox="0 0 16 16" height="288" width="288">
+    <path id="svg_2" class="color000 svgShape" fill="#1890ff" d="m8,4a4,4 0 1 0 0,8a4,4 0 0 0 0,-8z" fill-rule="evenodd"/>
+   </svg>
+  </g>
+ </g>
+</svg>

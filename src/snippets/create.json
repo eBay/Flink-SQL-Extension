@@ -1,0 +1,95 @@
+{
+  "File System": {
+    "prefix": [
+      "filesystem"
+    ],
+    "body": [
+      "CREATE TABLE ${1:table_name} (",
+      "\t${2:key_values}",
+      ") WITH (",
+      "\t'connector.type' = 'filesystem',",
+      "\t'connector.path' = '${3:file:///path/to/whatever}',  -- required: path to a file or directory",
+      "\t'format.type' = '${4:...}',",
+      "\t${5:optional properties}",
+      ");"
+    ],
+    "description": "File System Connector"
+  },
+
+  "Kafka": {
+    "prefix": [
+      "kafka"
+    ],
+    "body": [
+      "CREATE TABLE ${1:table_name} (",
+      "\t${2:key_value}",
+      ") WITH (",
+      "\t'connector.type' = 'kafka',",
+      "\t'connector.version' = ${3:'universal'}, --valid connector versions are \"0.8\", \"0.9\", \"0.10\", \"0.11\", and \"universal\"",
+      "\t'connector.topic' = '${4:topic_name}',",
+      "\t'connector.properties.zookeeper.connect' = '${5:localhost:2181}',",
+      "\t'connector.properties.bootstrap.servers' = '${6:localhost:9092}',",
+      "\t'format.type' = '${7:...'}, --the supported formats are 'csv', 'json' and 'avro'.",
+      "\t${8:...}",
+      ");"
+    ],
+    "description": "Kafka connector"
+  },
+
+  "Elasticsearch": {
+    "prefix": [
+      "elasticsearch"
+    ],
+    "body": [
+      "CREATE TABLE ${1:table_name} (",
+      "\t${2:key_values}",
+      ") WITH (",
+      "\t'connector.type' = 'elasticsearch',",
+      "\t'connector.version' = '6',",
+      "\t'connector.hosts' = '${3:http://host_name:9092;http://host_name:9093}',",
+      "\t'connector.index' = '${4}',",
+      "\t'connector.document-type' = '${5}',",
+      "\t'format.type' = 'json',",
+      "\t'...'",
+      ");"
+    ],
+    "description": "Elasticsearch connector"
+  },
+
+  "HBase": {
+    "prefix": [
+      "hbase"
+    ],
+    "body": [
+      "CREATE TABLE ${1:table_name} (",
+      "\t${2:hbase_rowkey_name} ${3:rowkey_type},",
+      "\t${4:hbase_column_family_name1} ROW<${5:...}>,",
+      "\t${6:hbase_column_family_name2} ROW<${7:...}>,",
+      ") WITH (",
+      "\t'connector.type' = 'hbase',",
+      "\t'connector.version' = '1.4.3',",
+      "\t'connector.table-name' = '${8:hbase_table_name}',",
+      "\t'connector.zookeeper.quorum' = '${9:localhost:2181}',",
+      "\t...",
+      ");"
+    ],
+    "description": "HBase connector"
+  },
+
+  "JDBC": {
+    "prefix": [
+      "jdbc"
+    ],
+    "body": [
+      "CREATE TABLE ${1:table_name} (",
+      "\t${2:key_value}",
+      ") WITH (",
+      "\t'connector.type' = 'jdbc',",
+      "\t'connector.url' = '${3:jdbc:mysql://localhost:3306/mydatabase}',",
+      "\t'connector.table' = '${4:jdbc_table_name}',",
+      "\t...",
+      ");"
+    ],
+    "description": "JDBC connector"
+  }
+} 

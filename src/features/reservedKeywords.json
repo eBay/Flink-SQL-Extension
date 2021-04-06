@@ -1,0 +1,3661 @@
+{
+  "flinkSQLFunctions": [
+    {
+      "detail": "POWER(numeric1, numeric2)",
+      "documentation": "Returns *numeric1* raised to the power of *numeric2*.",
+      "label": "POWER",
+      "insertText": "POWER"
+    },
+    {
+      "detail": "ABS(numeric)",
+      "documentation": "Returns the absolute value of *numeric*.",
+      "label": "ABS",
+      "insertText": "ABS"
+    },
+    {
+      "detail": "MOD(numeric1, numeric2)",
+      "documentation": "Returns the remainder (modulus) of *numeric1* divided by *numeric2*. The result is negative only if *numeric1* is negative.",
+      "label": "MOD",
+      "insertText": "MOD"
+    },
+    {
+      "detail": "SQRT(numeric)",
+      "documentation": "Returns the square root of *numeric*.",
+      "label": "SQRT",
+      "insertText": "SQRT"
+    },
+    {
+      "detail": "LN(numeric)",
+      "documentation": "Returns the natural logarithm (base e) of *numeric*.",
+      "label": "LN",
+      "insertText": "LN"
+    },
+    {
+      "detail": "LOG10(numeric)",
+      "documentation": "Returns the base 10 logarithm of *numeric*.",
+      "label": "LOG10",
+      "insertText": "LOG10"
+    },
+    {
+      "detail": "LOG2(numeric)",
+      "documentation": "Returns the base 2 logarithm of *numeric*.",
+      "label": "LOG2",
+      "insertText": "LOG2"
+    },
+    {
+      "detail": "LOG(numeric2) LOG(numeric1, numeric2)",
+      "documentation": "When called with one argument, returns the natural logarithm of *numeric2*. When called with two arguments, this function returns the logarithm of *numeric2* to the base *numeric1*.\n\n**Note:** Currently, *numeric2* must be greater than 0 and *numeric1* must be greater than 1.",
+      "label": "LOG",
+      "insertText": "LOG"
+    },
+    {
+      "detail": "EXP(numeric)",
+      "documentation": "Returns e raised to the power of *numeric*.",
+      "label": "EXP",
+      "insertText": "EXP"
+    },
+    {
+      "detail": "CEIL(numeric)",
+      "documentation": "Rounds *numeric* up, and returns the smallest number that is greater than or equal to *numeric*.",
+      "label": "CEIL",
+      "insertText": "CEIL"
+    },
+    {
+      "detail": "CEILING(numeric)",
+      "documentation": "Rounds *numeric* up, and returns the smallest number that is greater than or equal to *numeric*.",
+      "label": "CEILING",
+      "insertText": "CEILING"
+    },
+    {
+      "detail": "FLOOR(numeric)",
+      "documentation": "Rounds *numeric* down, and returns the largest number that is less than or equal to *numeric*.",
+      "label": "FLOOR",
+      "insertText": "FLOOR"
+    },
+    {
+      "detail": "SIN(numeric)",
+      "documentation": "Returns the sine of *numeric*.",
+      "label": "SIN",
+      "insertText": "SIN"
+    },
+    {
+      "detail": "SINH(numeric)",
+      "documentation": "Returns the hyperbolic sine of *numeric*.\n\nThe return type is *DOUBLE*.",
+      "label": "SINH",
+      "insertText": "SINH"
+    },
+    {
+      "detail": "COS(numeric)",
+      "documentation": "Returns the cosine of *numeric*.",
+      "label": "COS",
+      "insertText": "COS"
+    },
+    {
+      "detail": "TAN(numeric)",
+      "documentation": "Returns the tangent of *numeric*.",
+      "label": "TAN",
+      "insertText": "TAN"
+    },
+    {
+      "detail": "TANH(numeric)",
+      "documentation": "Returns the hyperbolic tangent of *numeric*.\n\nThe return type is *DOUBLE*.",
+      "label": "TANH",
+      "insertText": "TANH"
+    },
+    {
+      "detail": "COT(numeric)",
+      "documentation": "Returns the cotangent of a *numeric*.",
+      "label": "COT",
+      "insertText": "COT"
+    },
+    {
+      "detail": "ASIN(numeric)",
+      "documentation": "Returns the arc sine of *numeric*.",
+      "label": "ASIN",
+      "insertText": "ASIN"
+    },
+    {
+      "detail": "ACOS(numeric)",
+      "documentation": "Returns the arc cosine of *numeric*.",
+      "label": "ACOS",
+      "insertText": "ACOS"
+    },
+    {
+      "detail": "ATAN(numeric)",
+      "documentation": "Returns the arc tangent of *numeric*.",
+      "label": "ATAN",
+      "insertText": "ATAN"
+    },
+    {
+      "detail": "ATAN2(numeric1, numeric2)",
+      "documentation": "Returns the arc tangent of a coordinate *(numeric1, numeric2)*.",
+      "label": "ATAN2",
+      "insertText": "ATAN2"
+    },
+    {
+      "detail": "COSH(numeric)",
+      "documentation": "Returns the hyperbolic cosine of *NUMERIC*.\n\nReturn value type is *DOUBLE*.",
+      "label": "COSH",
+      "insertText": "COSH"
+    },
+    {
+      "detail": "DEGREES(numeric)",
+      "documentation": "Returns the degree representation of a radian *numeric*.",
+      "label": "DEGREES",
+      "insertText": "DEGREES"
+    },
+    {
+      "detail": "RADIANS(numeric)",
+      "documentation": "Returns the radian representation of a degree *numeric*.",
+      "label": "RADIANS",
+      "insertText": "RADIANS"
+    },
+    {
+      "detail": "SIGN(numeric)",
+      "documentation": "Returns the signum of *numeric*.",
+      "label": "SIGN",
+      "insertText": "SIGN"
+    },
+    {
+      "detail": "ROUND(numeric, integer)",
+      "documentation": "Returns a number rounded to *integer* decimal places for *numeric*.",
+      "label": "ROUND",
+      "insertText": "ROUND"
+    },
+    {
+      "detail": "PI",
+      "documentation": "Returns a value that is closer than any other values to pi.",
+      "label": "PI",
+      "insertText": "PI"
+    },
+    {
+      "detail": "E()",
+      "documentation": "Returns a value that is closer than any other values to e.",
+      "label": "E",
+      "insertText": "E"
+    },
+    {
+      "detail": "RAND()",
+      "documentation": "Returns a pseudorandom double value between 0.0 (inclusive) and 1.0 (exclusive).",
+      "label": "RAND",
+      "insertText": "RAND"
+    },
+    {
+      "detail": "RAND(integer)",
+      "documentation": "Returns a pseudorandom double value between 0.0 (inclusive) and 1.0 (exclusive) with an initial seed *integer*. Two RAND functions will return identical sequences of numbers if they have the same initial seed.",
+      "label": "RAND",
+      "insertText": "RAND"
+    },
+    {
+      "detail": "RAND_INTEGER(integer)",
+      "documentation": "Returns a pseudorandom integer value between 0 (inclusive) and integer (exclusive).",
+      "label": "RAND_INTEGER",
+      "insertText": "RAND_INTEGER"
+    },
+    {
+      "detail": "RAND_INTEGER(integer1, integer2)",
+      "documentation": "Returns a pseudorandom integer value between 0 (inclusive) and the specified value (exclusive) with an initial seed. Two RAND INTEGER functions will return identical sequences of numbers if they have the same initial seed and bound.",
+      "label": "RAND_INTEGER",
+      "insertText": "RAND_INTEGER"
+    },
+    {
+      "detail": "UUID()",
+      "documentation": "Returns an UUID (Universally Unique Identifier) string (e.g., \"3d3c68f7-f608-473f-b60c-b0c44ad4cc4e\") according to RFC 4122 type 4 (pseudo randomly generated) UUID. The UUID is generated using a cryptographically strong pseudo random number generator.",
+      "label": "UUID",
+      "insertText": "UUID"
+    },
+    {
+      "detail": "BIN(integer)",
+      "documentation": "Returns a string representation of *integer* in binary format. Returns NULL if *integer* is NULL.\n\nE.g. `BIN(4)` returns '100' and `BIN(12)` returns '1100'.",
+      "label": "BIN",
+      "insertText": "BIN"
+    },
+    {
+      "detail": "HEX(numeric)",
+      "documentation": "Returns a string representation of an integer *numeric* value or a *string* in hex format. Returns NULL if the argument is NULL.\n\nE.g. a numeric 20 leads to \"14\", a numeric 100 leads to \"64\", a string \"hello,world\" leads to \"68656C6C6F2C776F726C64\".",
+      "label": "HEX",
+      "insertText": "HEX"
+    },
+    {
+      "detail": "HEX(string)",
+      "documentation": "Returns a string representation of an integer *numeric* value or a *string* in hex format. Returns NULL if the argument is NULL.\n\nE.g. a numeric 20 leads to \"14\", a numeric 100 leads to \"64\", a string \"hello,world\" leads to \"68656C6C6F2C776F726C64\".",
+      "label": "HEX",
+      "insertText": "HEX"
+    },
+    {
+      "detail": "TRUNCATE(numeric1, integer2)",
+      "documentation": "Returns a *numeric* of truncated to *integer2* decimal places. Returns NULL if *numeric1* or *integer2* is NULL.If *integer2* is 0,the result has no decimal point or fractional part.*integer2* can be negative to cause *integer2* digits left of the decimal point of the value to become zero.This function can also pass in only one *numeric1* parameter and not set *Integer2* to use.If *Integer2* is not set, the function truncates as if *Integer2* were 0.\n\nE.g. `truncate(42.345, 2)` to 42.34. and `truncate(42.345)` to 42.0.",
+      "label": "TRUNCATE",
+      "insertText": "TRUNCATE"
+    },
+    {
+      "detail": "PI()",
+      "documentation": "Returns the value of π (pi).\n\nOnly supported in blink planner.",
+      "label": "PI",
+      "insertText": "PI"
+    },
+    {
+      "detail": "CHAR_LENGTH(string)",
+      "documentation": "Returns the number of characters in *string*.",
+      "label": "CHAR_LENGTH",
+      "insertText": "CHAR_LENGTH"
+    },
+    {
+      "detail": "CHARACTER_LENGTH(string)",
+      "documentation": "Returns the number of characters in *string*.",
+      "label": "CHARACTER_LENGTH",
+      "insertText": "CHARACTER_LENGTH"
+    },
+    {
+      "detail": "UPPER(string)",
+      "documentation": "Returns *string* in uppercase.",
+      "label": "UPPER",
+      "insertText": "UPPER"
+    },
+    {
+      "detail": "LOWER(string)",
+      "documentation": "Returns *string* in lowercase.",
+      "label": "LOWER",
+      "insertText": "LOWER"
+    },
+    {
+      "detail": "POSITION(string1 IN string2)",
+      "documentation": "Returns the position (start from 1) of the first occurrence of *string1* in *string2*; returns 0 if *string1* cannot be found in *string2*.",
+      "label": "POSITION",
+      "insertText": "POSITION"
+    },
+    {
+      "detail": "TRIM([ BOTH | LEADING | TRAILING ] string1 FROM string2)",
+      "documentation": "Returns a string that removes leading and/or trailing characters *string1* from *string2*. By default, whitespaces at both sides are removed.",
+      "label": "TRIM",
+      "insertText": "TRIM"
+    },
+    {
+      "detail": "LTRIM(string)",
+      "documentation": "Returns a string that removes the left whitespaces from *string*.\n\nE.g., `LTRIM(' This is a test String.')` returns \"This is a test String.\".",
+      "label": "LTRIM",
+      "insertText": "LTRIM"
+    },
+    {
+      "detail": "RTRIM(string)",
+      "documentation": "Returns a string that removes the right whitespaces from *string*.\n\nE.g., `RTRIM('This is a test String. ')` returns \"This is a test String.\".",
+      "label": "RTRIM",
+      "insertText": "RTRIM"
+    },
+    {
+      "detail": "REPEAT(string, integer)",
+      "documentation": "Returns a string that repeats the base *string* *integer* times.\n\nE.g., `REPEAT('This is a test String.', 2)` returns \"This is a test String.This is a test String.\".",
+      "label": "REPEAT",
+      "insertText": "REPEAT"
+    },
+    {
+      "detail": "REGEXP_REPLACE(string1, string2, string3)",
+      "documentation": "Returns a string from *string1* with all the substrings that match a regular expression *string2* consecutively being replaced with *string3*.\n\nE.g., `REGEXP_REPLACE('foobar', 'oo|ar', '')` returns \"fb\".",
+      "label": "REGEXP_REPLACE",
+      "insertText": "REGEXP_REPLACE"
+    },
+    {
+      "detail": "OVERLAY(string1 PLACING string2 FROM integer1 [ FOR integer2 ])",
+      "documentation": "Returns a string that replaces *integer2* (*string2*'s length by default) characters of *string1* with *string2* from position *integer1*.\n\nE.g., `OVERLAY('This is an old string' PLACING ' new' FROM 10 FOR 5)` returns \"This is a new string\"",
+      "label": "OVERLAY",
+      "insertText": "OVERLAY"
+    },
+    {
+      "detail": "SUBSTRING(string FROM integer1 [ FOR integer2 ])",
+      "documentation": "Returns a substring of *string* starting from position *integer1* with length *integer2* (to the end by default).",
+      "label": "SUBSTRING",
+      "insertText": "SUBSTRING"
+    },
+    {
+      "detail": "REPLACE(string1, string2, string3)",
+      "documentation": "Returns a new string which replaces all the occurrences of *string2* with *string3* (non-overlapping) from *string1*\n\nE.g., `REPLACE('hello world', 'world', 'flink')` returns \"hello flink\"; `REPLACE('ababab', 'abab', 'z')` returns \"zab\".",
+      "label": "REPLACE",
+      "insertText": "REPLACE"
+    },
+    {
+      "detail": "REGEXP_EXTRACT(string1, string2[, integer])",
+      "documentation": "Returns a string from *string1* which extracted with a specified regular expression *string2* and a regex match group index *integer*.\n\n**Note:** The regex match group index starts from 1 and 0 means matching the whole regex. In addition, the regex match group index should not exceed the number of the defined groups.\n\nE.g. `REGEXP_EXTRACT('foothebar', 'foo(.*?)(bar)', 2)\"` returns \"bar\".",
+      "label": "REGEXP_EXTRACT",
+      "insertText": "REGEXP_EXTRACT"
+    },
+    {
+      "detail": "INITCAP(string)",
+      "documentation": "Returns a new form of *string* with the first character of each word converted to uppercase and the rest characters to lowercase. Here a word means a sequences of alphanumeric characters.",
+      "label": "INITCAP",
+      "insertText": "INITCAP"
+    },
+    {
+      "detail": "CONCAT(string1, string2,...)",
+      "documentation": "Returns a string that concatenates *string1, string2, ...*. Returns NULL if any argument is NULL.\n\nE.g., `CONCAT('AA', 'BB', 'CC')` returns \"AABBCC\".",
+      "label": "CONCAT",
+      "insertText": "CONCAT"
+    },
+    {
+      "detail": "CONCAT_WS(string1, string2, string3,...)",
+      "documentation": "Returns a string that concatenates *string2, string3, ...* with a separator *string1*. The separator is added between the strings to be concatenated. Returns NULL If *string1* is NULL. Compared with `CONCAT()`, `CONCAT_WS()` automatically skips NULL arguments.\n\nE.g., `CONCAT_WS('~', 'AA', NULL, 'BB', '', 'CC')` returns \"AA~BB~~CC\".",
+      "label": "CONCAT_WS",
+      "insertText": "CONCAT_WS"
+    },
+    {
+      "detail": "LPAD(string1, integer, string2)",
+      "documentation": "Returns a new string from *string1* left-padded with *string2* to a length of *integer* characters. If the length of *string1* is shorter than *integer*, returns *string1* shortened to *integer* characters.\n\nE.g., `LPAD('hi',4,'??')` returns \"??hi\"; `LPAD('hi',1,'??')` returns \"h\".",
+      "label": "LPAD",
+      "insertText": "LPAD"
+    },
+    {
+      "detail": "RPAD(string1, integer, string2)",
+      "documentation": "Returns a new string from *string1* right-padded with *string2* to a length of *integer* characters. If the length of *string1* is shorter than *integer*, returns *string1* shortened to *integer* characters.\n\nE.g., `RPAD('hi',4,'??')` returns \"hi??\", `RPAD('hi',1,'??')` returns \"h\".",
+      "label": "RPAD",
+      "insertText": "RPAD"
+    },
+    {
+      "detail": "FROM_BASE64(string)",
+      "documentation": "Returns the base64-decoded result from *string*; returns NULL if *string* is NULL.\n\nE.g., `FROM_BASE64('aGVsbG8gd29ybGQ=')` returns \"hello world\".",
+      "label": "FROM_BASE64",
+      "insertText": "FROM_BASE64"
+    },
+    {
+      "detail": "TO_BASE64(string)",
+      "documentation": "Returns the base64-encoded result from *string*; returns NULL if *string* is NULL.\n\nE.g., `TO_BASE64('hello world')` returns \"aGVsbG8gd29ybGQ=\".",
+      "label": "TO_BASE64",
+      "insertText": "TO_BASE64"
+    },
+    {
+      "detail": "ASCII(string)",
+      "documentation": "Returns the numeric value of the first character of *string*. Returns NULL if *string* is NULL.\n\nOnly supported in blink planner.\n\nE.g., `ascii('abc')` returns 97, and `ascii(CAST(NULL AS VARCHAR))` returns NULL.",
+      "label": "ASCII",
+      "insertText": "ASCII"
+    },
+    {
+      "detail": "CHR(integer)",
+      "documentation": "Returns the ASCII character having the binary equivalent to *integer*. If *integer* is larger than 255, we will get the modulus of *integer* divided by 255 first, and returns *CHR* of the modulus. Returns NULL if *integer* is NULL.\n\nOnly supported in blink planner.\n\nE.g., `chr(97)` returns a, `chr(353)` returns a, and `ascii(CAST(NULL AS VARCHAR))` returns NULL.",
+      "label": "CHR",
+      "insertText": "CHR"
+    },
+    {
+      "detail": "DECODE(binary, string)",
+      "documentation": "Decodes the first argument into a String using the provided character set (one of 'US-ASCII', 'ISO-8859-1', 'UTF-8', 'UTF-16BE', 'UTF-16LE', 'UTF-16'). If either argument is null, the result will also be null.\n\nOnly supported in blink planner.",
+      "label": "DECODE",
+      "insertText": "DECODE"
+    },
+    {
+      "detail": "ENCODE(string1, string2)",
+      "documentation": "Encodes the *string1* into a BINARY using the provided *string2* character set (one of 'US-ASCII', 'ISO-8859-1', 'UTF-8', 'UTF-16BE', 'UTF-16LE', 'UTF-16'). If either argument is null, the result will also be null.\n\nOnly supported in blink planner.",
+      "label": "ENCODE",
+      "insertText": "ENCODE"
+    },
+    {
+      "detail": "INSTR(string1, string2)",
+      "documentation": "Returns the position of the first occurrence of string2 in string1. Returns NULL if any of arguments is NULL.\n\nOnly supported in blink planner.",
+      "label": "INSTR",
+      "insertText": "INSTR"
+    },
+    {
+      "detail": "LEFT(string, integer)",
+      "documentation": "Returns the leftmost *integer* characters from the *string*. Returns EMPTY String if *integer* is negative. Returns NULL if any argument is NULL.\n\nOnly supported in blink planner.",
+      "label": "LEFT",
+      "insertText": "LEFT"
+    },
+    {
+      "detail": "RIGHT(string, integer)",
+      "documentation": "Returns the rightmost *integer* characters from the *string*. Returns EMPTY String if *integer* is negative. Returns NULL if any argument is NULL.\n\nOnly supported in blink planner.",
+      "label": "RIGHT",
+      "insertText": "RIGHT"
+    },
+    {
+      "detail": "LOCATE(string1, string2[, integer])",
+      "documentation": "Returns the position of the first occurrence of *string1* in *string2* after position *integer*. Returns 0 if not found. Returns NULL if any of arguments is NULL.\n\nOnly supported in blink planner.",
+      "label": "LOCATE",
+      "insertText": "LOCATE"
+    },
+    {
+      "detail": "PARSE_URL(string1, string2[, string3])",
+      "documentation": "Returns the specified part from the URL. Valid values for string2 include 'HOST', 'PATH', 'QUERY', 'REF', 'PROTOCOL', 'AUTHORITY', 'FILE', and 'USERINFO'. Returns NULL if any of arguments is NULL.\n\nE.g., `parse_url('http://facebook.com/path1/p.php?k1=v1&k2=v2#Ref1', 'HOST')`, returns 'facebook.com'.\n\nAlso a value of a particular key in QUERY can be extracted by providing the key as the third argument *string3*.\n\nE.g., `parse_url('http://facebook.com/path1/p.php?k1=v1&k2=v2#Ref1', 'QUERY', 'k1')` returns 'v1'.\n\nOnly supported in blink planner.",
+      "label": "PARSE_URL",
+      "insertText": "PARSE_URL"
+    },
+    {
+      "detail": "REGEXP(string1, string2)",
+      "documentation": "Returns TRUE if any (possibly empty) substring of *string1* matches the Java regular expression *string2*, otherwise FALSE. Returns NULL if any of arguments is NULL.\n\nOnly supported in blink planner.",
+      "label": "REGEXP",
+      "insertText": "REGEXP"
+    },
+    {
+      "detail": "REVERSE(string)",
+      "documentation": "Returns the reversed string. Returns NULL if *string* is NULL.\n\nOnly supported in blink planner.",
+      "label": "REVERSE",
+      "insertText": "REVERSE"
+    },
+    {
+      "detail": "SPLIT_INDEX(string1, string2, integer1)",
+      "documentation": "Splits *string1* by the delimiter *string2*, returns the *integer*th (zero-based) string of the split strings. Returns NULL if *integer* is negative. Returns NULL if any of arguments is NULL.\n\nOnly supported in blink planner.",
+      "label": "SPLIT_INDEX",
+      "insertText": "SPLIT_INDEX"
+    },
+    {
+      "detail": "STR_TO_MAP(string1[, string2, string3]])",
+      "documentation": "Returns a map after splitting the *string1* into key/value pairs using delimiters. *string2* is the pair delimiter, default is ','. And *string3* is the key-value delimiter, default is '='.\n\nOnly supported in blink planner.",
+      "label": "STR_TO_MAP",
+      "insertText": "STR_TO_MAP"
+    },
+    {
+      "detail": "SUBSTR(string[, integer1[, integer2]])",
+      "documentation": "Returns a substring of string starting from position integer1 with length integer2 (to the end by default).\n\nOnly supported in blink planner.",
+      "label": "SUBSTR",
+      "insertText": "SUBSTR"
+    },
+    {
+      "detail": "INTERVAL",
+      "documentation": "Parses an interval *string* in the form \"dd hh:mm:ss.fff\" for SQL intervals of milliseconds or \"yyyy-mm\" for SQL intervals of months. An interval range might be `DAY`, `MINUTE`, `DAY TO HOUR`, or `DAY TO SECOND` for intervals of milliseconds; `YEAR` or `YEAR TO MONTH` for intervals of months.\n\nE.g., INTERVAL '10 00:00:00.004' DAY TO SECOND, INTERVAL '10' DAY, or INTERVAL '2-10' YEAR TO MONTH return intervals.",
+      "label": "INTERVAL",
+      "insertText": "INTERVAL"
+    },
+    {
+      "detail": "CURRENT_DATE",
+      "documentation": "Returns the current SQL date in the UTC time zone.",
+      "label": "CURRENT_DATE",
+      "insertText": "CURRENT_DATE"
+    },
+    {
+      "detail": "CURRENT_TIME",
+      "documentation": "Returns the current SQL time in the UTC time zone.",
+      "label": "CURRENT_TIME",
+      "insertText": "CURRENT_TIME"
+    },
+    {
+      "detail": "CURRENT_TIMESTAMP",
+      "documentation": "Returns the current SQL timestamp in the UTC time zone.",
+      "label": "CURRENT_TIMESTAMP",
+      "insertText": "CURRENT_TIMESTAMP"
+    },
+    {
+      "detail": "LOCALTIME",
+      "documentation": "Returns the current SQL time in local time zone.",
+      "label": "LOCALTIME",
+      "insertText": "LOCALTIME"
+    },
+    {
+      "detail": "LOCALTIMESTAMP",
+      "documentation": "Returns the current SQL timestamp in local time zone.",
+      "label": "LOCALTIMESTAMP",
+      "insertText": "LOCALTIMESTAMP"
+    },
+    {
+      "detail": "EXTRACT(timeintervalunit FROM temporal)",
+      "documentation": "Returns a long value extracted from the *timeintervalunit* part of *temporal*.\n\nE.g., `EXTRACT(DAY FROM DATE '2006-06-05')` returns 5.",
+      "label": "EXTRACT",
+      "insertText": "EXTRACT"
+    },
+    {
+      "detail": "YEAR(date)",
+      "documentation": "Returns the year from SQL date *date*. Equivalent to EXTRACT(YEAR FROM date).\n\nE.g., `YEAR(DATE '1994-09-27')` returns 1994.",
+      "label": "YEAR",
+      "insertText": "YEAR"
+    },
+    {
+      "detail": "QUARTER(date)",
+      "documentation": "Returns the quarter of a year (an integer between 1 and 4) from SQL date *date*. Equivalent to `EXTRACT(QUARTER FROM date)`.\n\nE.g., `QUARTER(DATE '1994-09-27')` returns 3.",
+      "label": "QUARTER",
+      "insertText": "QUARTER"
+    },
+    {
+      "detail": "MONTH(date)",
+      "documentation": "Returns the month of a year (an integer between 1 and 12) from SQL date *date*. Equivalent to `EXTRACT(MONTH FROM date)`.\n\nE.g., `MONTH(DATE '1994-09-27')` returns 9.",
+      "label": "MONTH",
+      "insertText": "MONTH"
+    },
+    {
+      "detail": "WEEK(date)",
+      "documentation": "Returns the week of a year (an integer between 1 and 53) from SQL date *date*. Equivalent to `EXTRACT(WEEK FROM date)`.\n\nE.g., `WEEK(DATE '1994-09-27')` returns 39.",
+      "label": "WEEK",
+      "insertText": "WEEK"
+    },
+    {
+      "detail": "DAYOFYEAR(date)",
+      "documentation": "Returns the day of a year (an integer between 1 and 366) from SQL date *date*. Equivalent to `EXTRACT(DOY FROM date)`.\n\nE.g., `DAYOFYEAR(DATE '1994-09-27')` returns 270.",
+      "label": "DAYOFYEAR",
+      "insertText": "DAYOFYEAR"
+    },
+    {
+      "detail": "DAYOFMONTH(date)",
+      "documentation": "Returns the day of a month (an integer between 1 and 31) from SQL date *date*. Equivalent to `EXTRACT(DAY FROM date)`.\n\nE.g., `DAYOFMONTH(DATE '1994-09-27')` returns 27.",
+      "label": "DAYOFMONTH",
+      "insertText": "DAYOFMONTH"
+    },
+    {
+      "detail": "DAYOFWEEK(date)",
+      "documentation": "Returns the day of a week (an integer between 1 and 7; Sunday = 1) from SQL date *date*.Equivalent to `EXTRACT(DOW FROM date)`.\n\nE.g., `DAYOFWEEK(DATE '1994-09-27')` returns 3.",
+      "label": "DAYOFWEEK",
+      "insertText": "DAYOFWEEK"
+    },
+    {
+      "detail": "HOUR(timestamp)",
+      "documentation": "Returns the hour of a day (an integer between 0 and 23) from SQL timestamp *timestamp*. Equivalent to `EXTRACT(HOUR FROM timestamp)`.\n\nE.g., `HOUR(TIMESTAMP '1994-09-27 13:14:15')` returns 13.",
+      "label": "HOUR",
+      "insertText": "HOUR"
+    },
+    {
+      "detail": "MINUTE(timestamp)",
+      "documentation": "Returns the minute of an hour (an integer between 0 and 59) from SQL timestamp *timestamp*. Equivalent to `EXTRACT(MINUTE FROM timestamp)`.\n\nE.g., `MINUTE(TIMESTAMP '1994-09-27 13:14:15')` returns 14.",
+      "label": "MINUTE",
+      "insertText": "MINUTE"
+    },
+    {
+      "detail": "SECOND(timestamp)",
+      "documentation": "Returns the second of a minute (an integer between 0 and 59) from SQL timestamp. Equivalent to `EXTRACT(SECOND FROM timestamp)`.\n\nE.g., `SECOND(TIMESTAMP '1994-09-27 13:14:15')` returns 15.",
+      "label": "SECOND",
+      "insertText": "SECOND"
+    },
+    {
+      "detail": "FLOOR(timepoint TO timeintervalunit)",
+      "documentation": "Returns a value that rounds *timepoint* down to the time unit *timeintervalunit*.\n\nE.g., `FLOOR(TIME '12:44:31' TO MINUTE)` returns 12:44:00.",
+      "label": "FLOOR",
+      "insertText": "FLOOR"
+    },
+    {
+      "detail": "CEIL(timepoint TO timeintervalunit)",
+      "documentation": "Returns a value that rounds *timepoint* up to the time unit *timeintervalunit*.\n\nE.g., `CEIL(TIME '12:44:31' TO MINUTE)` returns 12:45:00.",
+      "label": "CEIL",
+      "insertText": "CEIL"
+    },
+    {
+      "detail": "DATE_FORMAT(timestamp, string)",
+      "documentation": "**Attention for old planner** This function has serious bugs and should not be used for now. Please implement a custom UDF instead or use EXTRACT as a workaround.\n\nFor blink planner, this converts *timestamp* to a value of string in the format specified by the date format *string*. The format string is compatible with Java's [SimpleDateFormat](https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html).",
+      "label": "DATE_FORMAT",
+      "insertText": "DATE_FORMAT"
+    },
+    {
+      "detail": "TIMESTAMPADD(timeintervalunit, interval, timepoint)",
+      "documentation": "Returns a new time value that adds a (signed) integer interval to *timepoint*. The unit for *interval* is given by the unit argument, which should be one of the following values: `SECOND`, `MINUTE`, `HOUR`, `DAY`, `WEEK`, `MONTH`, `QUARTER`, or `YEAR`.\n\nE.g., `TIMESTAMPADD(WEEK, 1, DATE '2003-01-02')` returns `2003-01-09`.",
+      "label": "TIMESTAMPADD",
+      "insertText": "TIMESTAMPADD"
+    },
+    {
+      "detail": "TIMESTAMPDIFF(timepointunit, timepoint1, timepoint2)",
+      "documentation": "Returns the (signed) number of *timepointunit* between *timepoint1* and *timepoint2*. The unit for the interval is given by the first argument, which should be one of the following values: `SECOND`, `MINUTE`, `HOUR`, `DAY`, `MONTH`, or `YEAR`. See also the [Time Interval and Point Unit Specifiers table](https://ci.apache.org/projects/flink/flink-docs-release-1.11/dev/table/functions/systemFunctions.html#time-interval-and-point-unit-specifiers).\n\nE.g., `TIMESTAMPDIFF(DAY, TIMESTAMP '2003-01-02 10:00:00', TIMESTAMP '2003-01-03 10:00:00')` leads to `1`.",
+      "label": "TIMESTAMPDIFF",
+      "insertText": "TIMESTAMPDIFF"
+    },
+    {
+      "detail": "CONVERT_TZ(string1, string2, string3)",
+      "documentation": "Converts a datetime *string1* (with default ISO timestamp format 'yyyy-MM-dd HH:mm:ss') from time zone *string2* to time zone *string3*. The format of time zone should be either an abbreviation such as \"PST\", a full name such as \"America/Los_Angeles\", or a custom ID such as \"GMT-8:00\".\n\nE.g., `CONVERT('1970-01-01 00:00:00', 'UTC', 'America/Los_Angeles')` returns '1969-12-31 16:00:00'.\n\nOnly supported in blink planner.",
+      "label": "CONVERT_TZ",
+      "insertText": "CONVERT_TZ"
+    },
+    {
+      "detail": "FROM_UNIXTIME(numeric[, string])",
+      "documentation": "Returns a representation of the *numeric* argument as a value in *string* format (default is 'YYYY-MM-DD hh:mm:ss'). *numeric* is an internal timestamp value representing seconds since '1970-01-01 00:00:00' UTC, such as produced by the UNIX_TIMESTAMP() function. The return value is expressed in the session time zone (specified in TableConfig).\n\nE.g., `FROM_UNIXTIME(44)` returns '1970-01-01 09:00:44' if in UTC time zone, but returns '1970-01-01 09:00:44' if in 'Asia/Tokyo' time zone.\n\nOnly supported in blink planner.",
+      "label": "FROM_UNIXTIME",
+      "insertText": "FROM_UNIXTIME"
+    },
+    {
+      "detail": "UNIX_TIMESTAMP()",
+      "documentation": "Gets current Unix timestamp in seconds. This function is not deterministic.\n\nOnly supported in blink planner.",
+      "label": "UNIX_TIMESTAMP",
+      "insertText": "UNIX_TIMESTAMP"
+    },
+    {
+      "detail": "UNIX_TIMESTAMP(string1[, string2])",
+      "documentation": "Converts date time string *string1* in format *string2* (by default: yyyy-MM-dd HH:mm:ss if not specified) to Unix timestamp (in seconds), using the specified timezone in table config.\n\nOnly supported in blink planner.",
+      "label": "UNIX_TIMESTAMP",
+      "insertText": "UNIX_TIMESTAMP"
+    },
+    {
+      "detail": "TO_DATE(string1[, string2])",
+      "documentation": "Converts a date string *string1* with format *string2* (by default 'yyyy-MM-dd') to a date.\n\nOnly supported in blink planner.",
+      "label": "TO_DATE",
+      "insertText": "TO_DATE"
+    },
+    {
+      "detail": "TO_TIMESTAMP(string1[, string2])",
+      "documentation": "Converts date time string *string1* with format *string2* (by default: 'yyyy-MM-dd HH:mm:ss') under the session time zone (specified by TableConfig) to a timestamp.\n\nOnly supported in blink planner.",
+      "label": "TO_TIMESTAMP",
+      "insertText": "TO_TIMESTAMP"
+    },
+    {
+      "detail": "NOW()",
+      "documentation": "Returns the current SQL timestamp in the UTC time zone. This function is not deterministic.\n\nOnly supported in blink planner.",
+      "label": "NOW",
+      "insertText": "NOW"
+    },
+    {
+      "detail": "NULLIF(value1, value2)",
+      "documentation": "Returns NULL if *value1* is equal to *value2*; returns *value1* otherwise.\n\nE.g., `NULLIF(5, 5)` returns NULL; `NULLIF(5, 0)` returns 5.",
+      "label": "NULLIF",
+      "insertText": "NULLIF"
+    },
+    {
+      "detail": "COALESCE(value1, value2 [, value3 ]* )",
+      "documentation": "Returns the first value that is not NULL from *value1, value2, ...*.\n\nE.g., `COALESCE(NULL, 5)` returns 5.",
+      "label": "COALESCE",
+      "insertText": "COALESCE"
+    },
+    {
+      "detail": "IF(condition, true_value, false_value)",
+      "documentation": "Returns the *true_value* if *condition* is met, otherwise *false_value*.\n\nOnly supported in blink planner.\n\nE.g., `IF(5 > 3, 5, 3)` returns 5.",
+      "label": "IF",
+      "insertText": "IF"
+    },
+    {
+      "detail": "IS_ALPHA(string)",
+      "documentation": "Returns true if all characters in *string* are letter, otherwise false.\n\nOnly supported in blink planner.",
+      "label": "IS_ALPHA",
+      "insertText": "IS_ALPHA"
+    },
+    {
+      "detail": "IS_DECIMAL(string)",
+      "documentation": "Returns true if *string* can be parsed to a valid numeric, otherwise false.\n\nOnly supported in blink planner.",
+      "label": "IS_DECIMAL",
+      "insertText": "IS_DECIMAL"
+    },
+    {
+      "detail": "IS_DIGIT(string)",
+      "documentation": "Returns true if all characters in *string* are digit, otherwise false.\n\nOnly supported in blink planner.",
+      "label": "IS_DIGIT",
+      "insertText": "IS_DIGIT"
+    },
+    {
+      "detail": "CAST(value AS type)",
+      "documentation": "Returns a new *value* being cast to type *type*. See the supported types [here](https://ci.apache.org/projects/flink/flink-docs-release-1.11/dev/table/types.html).\n\nE.g., `CAST('42' AS INT)` returns 42; `CAST(NULL AS VARCHAR)` returns NULL of type VARCHAR.",
+      "label": "CAST",
+      "insertText": "CAST"
+    },
+    {
+      "detail": "CARDINALITY(array)",
+      "documentation": "Returns the number of elements in *array*.",
+      "label": "CARDINALITY",
+      "insertText": "CARDINALITY"
+    },
+    {
+      "detail": "ELEMENT(array)",
+      "documentation": "Returns the sole element of *array* (whose cardinality should be one); returns NULL if *array* is empty. Throws an exception if *array* has more than one element.",
+      "label": "ELEMENT",
+      "insertText": "ELEMENT"
+    },
+    {
+      "detail": "CARDINALITY(map)",
+      "documentation": "Returns the number of entries in *map*.",
+      "label": "CARDINALITY",
+      "insertText": "CARDINALITY"
+    },
+    {
+      "detail": "GROUP_ID()",
+      "documentation": "Returns an integer that uniquely identifies the combination of grouping keys.",
+      "label": "GROUP_ID",
+      "insertText": "GROUP_ID"
+    },
+    {
+      "detail": "GROUPING(expression1 [, expression2]* ) GROUPING_ID(expression1 [, expression2]* )",
+      "documentation": "Returns a bit vector of the given grouping expressions.",
+      "label": "GROUPING",
+      "insertText": "GROUPING"
+    },
+    {
+      "detail": "MD5(string)",
+      "documentation": "Returns the MD5 hash of *string* as a string of 32 hexadecimal digits; returns NULL if *string* is NULL.",
+      "label": "MD5",
+      "insertText": "MD5"
+    },
+    {
+      "detail": "SHA1(string)",
+      "documentation": "Returns the SHA-1 hash of *string* as a string of 40 hexadecimal digits; returns NULL if *string* is NULL.",
+      "label": "SHA1",
+      "insertText": "SHA1"
+    },
+    {
+      "detail": "SHA224(string)",
+      "documentation": "Returns the SHA-224 hash of *string* as a string of 56 hexadecimal digits; returns NULL if *string* is NULL.",
+      "label": "SHA224",
+      "insertText": "SHA224"
+    },
+    {
+      "detail": "SHA256(string)",
+      "documentation": "Returns the SHA-256 hash of *string* as a string of 64 hexadecimal digits; returns NULL if *string* is NULL.",
+      "label": "SHA256",
+      "insertText": "SHA256"
+    },
+    {
+      "detail": "SHA384(string)",
+      "documentation": "Returns the SHA-384 hash of *string* as a string of 96 hexadecimal digits; returns NULL if *string* is NULL.",
+      "label": "SHA384",
+      "insertText": "SHA384"
+    },
+    {
+      "detail": "SHA512(string)",
+      "documentation": "Returns the SHA-512 hash of *string* as a string of 128 hexadecimal digits; returns NULL if *string* is NULL.",
+      "label": "SHA512",
+      "insertText": "SHA512"
+    },
+    {
+      "detail": "SHA2(string, hashLength)",
+      "documentation": "Returns the hash using the SHA-2 family of hash functions (SHA-224, SHA-256, SHA-384, or SHA-512). The first argument *string* is the string to be hashed and the second argument *hashLength* is the bit length of the result (224, 256, 384, or 512). Returns NULL if *string* or *hashLength* is NULL.",
+      "label": "SHA2",
+      "insertText": "SHA2"
+    },
+    {
+      "detail": "COUNT([ ALL ] expression | DISTINCT expression1 [, expression2]*)",
+      "documentation": "By default or with ALL, returns the number of input rows for which *expression* is not NULL. Use DISTINCT for one unique instance of each value.",
+      "label": "COUNT",
+      "insertText": "COUNT"
+    },
+    {
+      "detail": "COUNT(*)",
+      "documentation": "Returns the number of input rows.",
+      "label": "COUNT",
+      "insertText": "COUNT"
+    },
+    {
+      "detail": "AVG([ ALL | DISTINCT ] expression)",
+      "documentation": "By default or with keyword ALL, returns the average (arithmetic mean) of *expression* across all input rows. Use DISTINCT for one unique instance of each value.",
+      "label": "AVG",
+      "insertText": "AVG"
+    },
+    {
+      "detail": "SUM([ ALL | DISTINCT ] expression)",
+      "documentation": "By default or with keyword ALL, returns the sum of *expression* across all input rows. Use DISTINCT for one unique instance of each value.",
+      "label": "SUM",
+      "insertText": "SUM"
+    },
+    {
+      "detail": "MAX([ ALL | DISTINCT ] expression)",
+      "documentation": "By default or with keyword ALL, returns the maximum value of *expression* across all input rows. Use DISTINCT for one unique instance of each value.",
+      "label": "MAX",
+      "insertText": "MAX"
+    },
+    {
+      "detail": "MIN([ ALL | DISTINCT ] expression)",
+      "documentation": "By default or with keyword ALL, returns the minimum value of *expression* across all input rows. Use DISTINCT for one unique instance of each value.",
+      "label": "MIN",
+      "insertText": "MIN"
+    },
+    {
+      "detail": "STDDEV_POP([ ALL | DISTINCT ] expression)",
+      "documentation": "By default or with keyword ALL, returns the population standard deviation of *expression* across all input rows. Use DISTINCT for one unique instance of each value.",
+      "label": "STDDEV_POP",
+      "insertText": "STDDEV_POP"
+    },
+    {
+      "detail": "STDDEV_SAMP([ ALL | DISTINCT ] expression)",
+      "documentation": "By default or with keyword ALL, returns the sample standard deviation of *expression* across all input rows. Use DISTINCT for one unique instance of each value.",
+      "label": "STDDEV_SAMP",
+      "insertText": "STDDEV_SAMP"
+    },
+    {
+      "detail": "VAR_POP([ ALL | DISTINCT ] expression)",
+      "documentation": "By default or with keyword ALL, returns the population variance (square of the population standard deviation) of *expression* across all input rows. Use DISTINCT for one unique instance of each value.",
+      "label": "VAR_POP",
+      "insertText": "VAR_POP"
+    },
+    {
+      "detail": "VAR_SAMP([ ALL | DISTINCT ] expression)",
+      "documentation": "By default or with keyword ALL, returns the sample variance (square of the sample standard deviation) of *expression* across all input rows. Use DISTINCT for one unique instance of each value.",
+      "label": "VAR_SAMP",
+      "insertText": "VAR_SAMP"
+    },
+    {
+      "detail": "COLLECT([ ALL | DISTINCT ] expression)",
+      "documentation": "By default or with keyword ALL, returns a multiset of *expression* across all input rows. NULL values will be ignored. Use DISTINCT for one unique instance of each value.",
+      "label": "COLLECT",
+      "insertText": "COLLECT"
+    },
+    {
+      "detail": "VARIANCE([ ALL | DISTINCT ] expression)",
+      "documentation": "Synonyms for VAR_SAMP().\n\nOnly supported in blink planner.",
+      "label": "VARIANCE",
+      "insertText": "VARIANCE"
+    },
+    {
+      "detail": "RANK()",
+      "documentation": "Returns the rank of a value in a group of values. The result is one plus the number of rows preceding or equal to the current row in the ordering of the partition. The values will produce gaps in the sequence.\n\nOnly supported in blink planner.",
+      "label": "RANK",
+      "insertText": "RANK"
+    },
+    {
+      "detail": "DENSE_RANK()",
+      "documentation": "Returns the rank of a value in a group of values. The result is one plus the previously assigned rank value. Unlike the function rank, dense_rank will not produce gaps in the ranking sequence.\n\nOnly supported in blink planner.",
+      "label": "DENSE_RANK",
+      "insertText": "DENSE_RANK"
+    },
+    {
+      "detail": "ROW_NUMBER()",
+      "documentation": "Assigns a unique, sequential number to each row, starting with one, according to the ordering of rows within the window partition.\n\nROW_NUMBER and RANK are similar. ROW_NUMBER numbers all rows sequentially (for example 1, 2, 3, 4, 5). RANK provides the same numeric value for ties (for example 1, 2, 2, 4, 5).\n\nOnly supported in blink planner.",
+      "label": "ROW_NUMBER",
+      "insertText": "ROW_NUMBER"
+    },
+    {
+      "detail": "LEAD(expression [, offset] [, default] )",
+      "documentation": "Returns the value of *expression* at the *offset*th row after the current row in the window. The default value of *offset* is 1 and the default value of *default* is NULL.\n\nOnly supported in blink planner.",
+      "label": "LEAD",
+      "insertText": "LEAD"
+    },
+    {
+      "detail": "LAG(expression [, offset] [, default])",
+      "documentation": "Returns the value of *expression* at the *offset*th row after the current row in the window. The default value of *offset* is 1 and the default value of *default* is NULL.\n\nOnly supported in blink planner.",
+      "label": "LAG",
+      "insertText": "LAG"
+    },
+    {
+      "detail": "FIRST_VALUE(expression)",
+      "documentation": "Returns the first value in an ordered set of values.\n\nOnly supported in blink planner.",
+      "label": "FIRST_VALUE",
+      "insertText": "FIRST_VALUE"
+    },
+    {
+      "detail": "LAST_VALUE(expression)",
+      "documentation": "Returns the last value in an ordered set of values.\n\nOnly supported in blink planner.",
+      "label": "LAST_VALUE",
+      "insertText": "LAST_VALUE"
+    },
+    {
+      "detail": "LISTAGG(expression [, separator])",
+      "documentation": "Concatenates the values of string expressions and places separator values between them. The separator is not added at the end of string. The default value of *separator* is ','.\n\nOnly supported in blink planner.",
+      "label": "LISTAGG",
+      "insertText": "LISTAGG"
+    },
+    {
+      "detail": "ADDDATE(date, INTERVAL value addunit)",
+      "documentation": "The `ADDDATE()` function adds a time/date interval to a date and then returns the date.",
+      "label": "ADDDATE",
+      "insertText": "ADDDATE"
+    },
+    {
+      "detail": "ADDTIME(datetime, addtime)",
+      "documentation": "The `ADDTIME()` function adds a time interval to a time/datetime and then returns the time/datetime.",
+      "label": "ADDTIME",
+      "insertText": "ADDTIME"
+    },
+    {
+      "detail": "AES_DECRYPT(crypt_str, key_str)",
+      "documentation": "The `AES_DECRYPT()` function decrypts an encrypted string using AES algorithm to return the original string. It returns NULL if detects invalid data.",
+      "label": "AES_DECRYPT",
+      "insertText": "AES_DECRYPT"
+    },
+    {
+      "detail": "AES_ENCRYPT(str, key_str)",
+      "documentation": "The `AES_ENCRYPT()` function encrypts a string using AES algorithm",
+      "label": "AES_ENCRYPT",
+      "insertText": "AES_ENCRYPT"
+    },
+    {
+      "detail": "ANY_VALUE( [ DISTINCT ] <expr1> )",
+      "documentation": "Returns some value of the expression from the group. The result is non-deterministic.",
+      "label": "ANY_VALUE",
+      "insertText": "ANY_VALUE"
+    },
+    {
+      "detail": "Area",
+      "documentation": "",
+      "label": "Area",
+      "insertText": "Area"
+    },
+    {
+      "detail": "AsBinary",
+      "documentation": "",
+      "label": "AsBinary",
+      "insertText": "AsBinary"
+    },
+    {
+      "detail": "AsWKB",
+      "documentation": "",
+      "label": "AsWKB",
+      "insertText": "AsWKB"
+    },
+    {
+      "detail": "AsText",
+      "documentation": "",
+      "label": "AsText",
+      "insertText": "AsText"
+    },
+    {
+      "detail": "AsWKT",
+      "documentation": "",
+      "label": "AsWKT",
+      "insertText": "AsWKT"
+    },
+    {
+      "detail": "ASYMMETRIC_DECRYPT",
+      "documentation": "",
+      "label": "ASYMMETRIC_DECRYPT",
+      "insertText": "ASYMMETRIC_DECRYPT"
+    },
+    {
+      "detail": "ASYMMETRIC_DERIVE",
+      "documentation": "",
+      "label": "ASYMMETRIC_DERIVE",
+      "insertText": "ASYMMETRIC_DERIVE"
+    },
+    {
+      "detail": "ASYMMETRIC_ENCRYPT",
+      "documentation": "",
+      "label": "ASYMMETRIC_ENCRYPT",
+      "insertText": "ASYMMETRIC_ENCRYPT"
+    },
+    {
+      "detail": "ASYMMETRIC_SIGN",
+      "documentation": "",
+      "label": "ASYMMETRIC_SIGN",
+      "insertText": "ASYMMETRIC_SIGN"
+    },
+    {
+      "detail": "ASYMMETRIC_VERIFY",
+      "documentation": "",
+      "label": "ASYMMETRIC_VERIFY",
+      "insertText": "ASYMMETRIC_VERIFY"
+    },
+    {
+      "detail": "BENCHMARK",
+      "documentation": "",
+      "label": "BENCHMARK",
+      "insertText": "BENCHMARK"
+    },
+    {
+      "detail": "BIT_AND",
+      "documentation": "",
+      "label": "BIT_AND",
+      "insertText": "BIT_AND"
+    },
+    {
+      "detail": "BIT_COUNT",
+      "documentation": "",
+      "label": "BIT_COUNT",
+      "insertText": "BIT_COUNT"
+    },
+    {
+      "detail": "BIT_LENGTH",
+      "documentation": "",
+      "label": "BIT_LENGTH",
+      "insertText": "BIT_LENGTH"
+    },
+    {
+      "detail": "BIT_OR",
+      "documentation": "",
+      "label": "BIT_OR",
+      "insertText": "BIT_OR"
+    },
+    {
+      "detail": "BIT_XOR",
+      "documentation": "",
+      "label": "BIT_XOR",
+      "insertText": "BIT_XOR"
+    },
+    {
+      "detail": "Buffer",
+      "documentation": "",
+      "label": "Buffer",
+      "insertText": "Buffer"
+    },
+    {
+      "detail": "Centroid",
+      "documentation": "",
+      "label": "Centroid",
+      "insertText": "Centroid"
+    },
+    {
+      "detail": "CHAR",
+      "documentation": "",
+      "label": "CHAR",
+      "insertText": "CHAR"
+    },
+    {
+      "detail": "CHARSET",
+      "documentation": "",
+      "label": "CHARSET",
+      "insertText": "CHARSET"
+    },
+    {
+      "detail": "COERCIBILITY",
+      "documentation": "",
+      "label": "COERCIBILITY",
+      "insertText": "COERCIBILITY"
+    },
+    {
+      "detail": "COLLATION",
+      "documentation": "",
+      "label": "COLLATION",
+      "insertText": "COLLATION"
+    },
+    {
+      "detail": "COMPRESS",
+      "documentation": "",
+      "label": "COMPRESS",
+      "insertText": "COMPRESS"
+    },
+    {
+      "detail": "CONNECTION_ID",
+      "documentation": "",
+      "label": "CONNECTION_ID",
+      "insertText": "CONNECTION_ID"
+    },
+    {
+      "detail": "Contains",
+      "documentation": "",
+      "label": "Contains",
+      "insertText": "Contains"
+    },
+    {
+      "detail": "CONV",
+      "documentation": "",
+      "label": "CONV",
+      "insertText": "CONV"
+    },
+    {
+      "detail": "CONVERT",
+      "documentation": "",
+      "label": "CONVERT",
+      "insertText": "CONVERT"
+    },
+    {
+      "detail": "ConvexHull",
+      "documentation": "",
+      "label": "ConvexHull",
+      "insertText": "ConvexHull"
+    },
+    {
+      "detail": "CRC32",
+      "documentation": "",
+      "label": "CRC32",
+      "insertText": "CRC32"
+    },
+    {
+      "detail": "CREATE_ASYMMETRIC_PRIV_KEY",
+      "documentation": "",
+      "label": "CREATE_ASYMMETRIC_PRIV_KEY",
+      "insertText": "CREATE_ASYMMETRIC_PRIV_KEY"
+    },
+    {
+      "detail": "CREATE_ASYMMETRIC_PUB_KEY",
+      "documentation": "",
+      "label": "CREATE_ASYMMETRIC_PUB_KEY",
+      "insertText": "CREATE_ASYMMETRIC_PUB_KEY"
+    },
+    {
+      "detail": "CREATE_DH_PARAMETERS",
+      "documentation": "",
+      "label": "CREATE_DH_PARAMETERS",
+      "insertText": "CREATE_DH_PARAMETERS"
+    },
+    {
+      "detail": "CREATE_DIGEST",
+      "documentation": "",
+      "label": "CREATE_DIGEST",
+      "insertText": "CREATE_DIGEST"
+    },
+    {
+      "detail": "Crosses",
+      "documentation": "",
+      "label": "Crosses",
+      "insertText": "Crosses"
+    },
+    {
+      "detail": "CURDATE",
+      "documentation": "",
+      "label": "CURDATE",
+      "insertText": "CURDATE"
+    },
+    {
+      "detail": "CURRENT_USER",
+      "documentation": "",
+      "label": "CURRENT_USER",
+      "insertText": "CURRENT_USER"
+    },
+    {
+      "detail": "CURTIME",
+      "documentation": "",
+      "label": "CURTIME",
+      "insertText": "CURTIME"
+    },
+    {
+      "detail": "DATABASE",
+      "documentation": "",
+      "label": "DATABASE",
+      "insertText": "DATABASE"
+    },
+    {
+      "detail": "DATE",
+      "documentation": "",
+      "label": "DATE",
+      "insertText": "DATE"
+    },
+    {
+      "detail": "DATE_ADD",
+      "documentation": "",
+      "label": "DATE_ADD",
+      "insertText": "DATE_ADD"
+    },
+    {
+      "detail": "DATE_SUB",
+      "documentation": "",
+      "label": "DATE_SUB",
+      "insertText": "DATE_SUB"
+    },
+    {
+      "detail": "DATEDIFF",
+      "documentation": "",
+      "label": "DATEDIFF",
+      "insertText": "DATEDIFF"
+    },
+    {
+      "detail": "DAY",
+      "documentation": "",
+      "label": "DAY",
+      "insertText": "DAY"
+    },
+    {
+      "detail": "DAYNAME",
+      "documentation": "",
+      "label": "DAYNAME",
+      "insertText": "DAYNAME"
+    },
+    {
+      "detail": "DEFAULT",
+      "documentation": "",
+      "label": "DEFAULT",
+      "insertText": "DEFAULT"
+    },
+    {
+      "detail": "DES_DECRYPT",
+      "documentation": "",
+      "label": "DES_DECRYPT",
+      "insertText": "DES_DECRYPT"
+    },
+    {
+      "detail": "DES_ENCRYPT",
+      "documentation": "",
+      "label": "DES_ENCRYPT",
+      "insertText": "DES_ENCRYPT"
+    },
+    {
+      "detail": "Dimension",
+      "documentation": "",
+      "label": "Dimension",
+      "insertText": "Dimension"
+    },
+    {
+      "detail": "Disjoint",
+      "documentation": "",
+      "label": "Disjoint",
+      "insertText": "Disjoint"
+    },
+    {
+      "detail": "Distance",
+      "documentation": "",
+      "label": "Distance",
+      "insertText": "Distance"
+    },
+    {
+      "detail": "ELT",
+      "documentation": "",
+      "label": "ELT",
+      "insertText": "ELT"
+    },
+    {
+      "detail": "ENCRYPT",
+      "documentation": "",
+      "label": "ENCRYPT",
+      "insertText": "ENCRYPT"
+    },
+    {
+      "detail": "EndPoint",
+      "documentation": "",
+      "label": "EndPoint",
+      "insertText": "EndPoint"
+    },
+    {
+      "detail": "Envelope",
+      "documentation": "",
+      "label": "Envelope",
+      "insertText": "Envelope"
+    },
+    {
+      "detail": "Equals",
+      "documentation": "",
+      "label": "Equals",
+      "insertText": "Equals"
+    },
+    {
+      "detail": "EXPORT_SET",
+      "documentation": "",
+      "label": "EXPORT_SET",
+      "insertText": "EXPORT_SET"
+    },
+    {
+      "detail": "ExteriorRing",
+      "documentation": "",
+      "label": "ExteriorRing",
+      "insertText": "ExteriorRing"
+    },
+    {
+      "detail": "ExtractValue",
+      "documentation": "",
+      "label": "ExtractValue",
+      "insertText": "ExtractValue"
+    },
+    {
+      "detail": "FIELD",
+      "documentation": "",
+      "label": "FIELD",
+      "insertText": "FIELD"
+    },
+    {
+      "detail": "FIND_IN_SET",
+      "documentation": "",
+      "label": "FIND_IN_SET",
+      "insertText": "FIND_IN_SET"
+    },
+    {
+      "detail": "FORMAT",
+      "documentation": "",
+      "label": "FORMAT",
+      "insertText": "FORMAT"
+    },
+    {
+      "detail": "FOUND_ROWS",
+      "documentation": "",
+      "label": "FOUND_ROWS",
+      "insertText": "FOUND_ROWS"
+    },
+    {
+      "detail": "FROM_DAYS",
+      "documentation": "",
+      "label": "FROM_DAYS",
+      "insertText": "FROM_DAYS"
+    },
+    {
+      "detail": "GeomCollFromText",
+      "documentation": "",
+      "label": "GeomCollFromText",
+      "insertText": "GeomCollFromText"
+    },
+    {
+      "detail": "GeometryCollectionFromText",
+      "documentation": "",
+      "label": "GeometryCollectionFromText",
+      "insertText": "GeometryCollectionFromText"
+    },
+    {
+      "detail": "GeomCollFromWKB",
+      "documentation": "",
+      "label": "GeomCollFromWKB",
+      "insertText": "GeomCollFromWKB"
+    },
+    {
+      "detail": "GeometryCollectionFromWKB",
+      "documentation": "",
+      "label": "GeometryCollectionFromWKB",
+      "insertText": "GeometryCollectionFromWKB"
+    },
+    {
+      "detail": "GeometryCollection",
+      "documentation": "",
+      "label": "GeometryCollection",
+      "insertText": "GeometryCollection"
+    },
+    {
+      "detail": "GeometryN",
+      "documentation": "",
+      "label": "GeometryN",
+      "insertText": "GeometryN"
+    },
+    {
+      "detail": "GeometryType",
+      "documentation": "",
+      "label": "GeometryType",
+      "insertText": "GeometryType"
+    },
+    {
+      "detail": "GeomFromText",
+      "documentation": "",
+      "label": "GeomFromText",
+      "insertText": "GeomFromText"
+    },
+    {
+      "detail": "GeometryFromText",
+      "documentation": "",
+      "label": "GeometryFromText",
+      "insertText": "GeometryFromText"
+    },
+    {
+      "detail": "GeomFromWKB",
+      "documentation": "",
+      "label": "GeomFromWKB",
+      "insertText": "GeomFromWKB"
+    },
+    {
+      "detail": "GeometryFromWKB",
+      "documentation": "",
+      "label": "GeometryFromWKB",
+      "insertText": "GeometryFromWKB"
+    },
+    {
+      "detail": "GET_FORMAT",
+      "documentation": "",
+      "label": "GET_FORMAT",
+      "insertText": "GET_FORMAT"
+    },
+    {
+      "detail": "GET_LOCK",
+      "documentation": "",
+      "label": "GET_LOCK",
+      "insertText": "GET_LOCK"
+    },
+    {
+      "detail": "GLength",
+      "documentation": "",
+      "label": "GLength",
+      "insertText": "GLength"
+    },
+    {
+      "detail": "GREATEST",
+      "documentation": "",
+      "label": "GREATEST",
+      "insertText": "GREATEST"
+    },
+    {
+      "detail": "GROUP_CONCAT",
+      "documentation": "",
+      "label": "GROUP_CONCAT",
+      "insertText": "GROUP_CONCAT"
+    },
+    {
+      "detail": "GTID_SUBSET",
+      "documentation": "",
+      "label": "GTID_SUBSET",
+      "insertText": "GTID_SUBSET"
+    },
+    {
+      "detail": "GTID_SUBTRACT",
+      "documentation": "",
+      "label": "GTID_SUBTRACT",
+      "insertText": "GTID_SUBTRACT"
+    },
+    {
+      "detail": "IFNULL",
+      "documentation": "",
+      "label": "IFNULL",
+      "insertText": "IFNULL"
+    },
+    {
+      "detail": "INET_ATON",
+      "documentation": "",
+      "label": "INET_ATON",
+      "insertText": "INET_ATON"
+    },
+    {
+      "detail": "INET_NTOA",
+      "documentation": "",
+      "label": "INET_NTOA",
+      "insertText": "INET_NTOA"
+    },
+    {
+      "detail": "INET6_ATON",
+      "documentation": "",
+      "label": "INET6_ATON",
+      "insertText": "INET6_ATON"
+    },
+    {
+      "detail": "INET6_NTOA",
+      "documentation": "",
+      "label": "INET6_NTOA",
+      "insertText": "INET6_NTOA"
+    },
+    {
+      "detail": "INSERT",
+      "documentation": "",
+      "label": "INSERT",
+      "insertText": "INSERT"
+    },
+    {
+      "detail": "InteriorRingN",
+      "documentation": "",
+      "label": "InteriorRingN",
+      "insertText": "InteriorRingN"
+    },
+    {
+      "detail": "Intersects",
+      "documentation": "",
+      "label": "Intersects",
+      "insertText": "Intersects"
+    },
+    {
+      "detail": "IS_FREE_LOCK",
+      "documentation": "",
+      "label": "IS_FREE_LOCK",
+      "insertText": "IS_FREE_LOCK"
+    },
+    {
+      "detail": "IS_IPV4",
+      "documentation": "",
+      "label": "IS_IPV4",
+      "insertText": "IS_IPV4"
+    },
+    {
+      "detail": "IS_IPV4_COMPAT",
+      "documentation": "",
+      "label": "IS_IPV4_COMPAT",
+      "insertText": "IS_IPV4_COMPAT"
+    },
+    {
+      "detail": "IS_IPV4_MAPPED",
+      "documentation": "",
+      "label": "IS_IPV4_MAPPED",
+      "insertText": "IS_IPV4_MAPPED"
+    },
+    {
+      "detail": "IS_IPV6",
+      "documentation": "",
+      "label": "IS_IPV6",
+      "insertText": "IS_IPV6"
+    },
+    {
+      "detail": "IS_USED_LOCK",
+      "documentation": "",
+      "label": "IS_USED_LOCK",
+      "insertText": "IS_USED_LOCK"
+    },
+    {
+      "detail": "IsClosed",
+      "documentation": "",
+      "label": "IsClosed",
+      "insertText": "IsClosed"
+    },
+    {
+      "detail": "IsEmpty",
+      "documentation": "",
+      "label": "IsEmpty",
+      "insertText": "IsEmpty"
+    },
+    {
+      "detail": "ISNULL",
+      "documentation": "",
+      "label": "ISNULL",
+      "insertText": "ISNULL"
+    },
+    {
+      "detail": "IsSimple",
+      "documentation": "",
+      "label": "IsSimple",
+      "insertText": "IsSimple"
+    },
+    {
+      "detail": "JSON_APPEND",
+      "documentation": "",
+      "label": "JSON_APPEND",
+      "insertText": "JSON_APPEND"
+    },
+    {
+      "detail": "JSON_ARRAY",
+      "documentation": "",
+      "label": "JSON_ARRAY",
+      "insertText": "JSON_ARRAY"
+    },
+    {
+      "detail": "JSON_ARRAY_APPEND",
+      "documentation": "",
+      "label": "JSON_ARRAY_APPEND",
+      "insertText": "JSON_ARRAY_APPEND"
+    },
+    {
+      "detail": "JSON_ARRAY_INSERT",
+      "documentation": "",
+      "label": "JSON_ARRAY_INSERT",
+      "insertText": "JSON_ARRAY_INSERT"
+    },
+    {
+      "detail": "JSON_CONTAINS",
+      "documentation": "",
+      "label": "JSON_CONTAINS",
+      "insertText": "JSON_CONTAINS"
+    },
+    {
+      "detail": "JSON_CONTAINS_PATH",
+      "documentation": "",
+      "label": "JSON_CONTAINS_PATH",
+      "insertText": "JSON_CONTAINS_PATH"
+    },
+    {
+      "detail": "JSON_DEPTH",
+      "documentation": "",
+      "label": "JSON_DEPTH",
+      "insertText": "JSON_DEPTH"
+    },
+    {
+      "detail": "JSON_EXTRACT",
+      "documentation": "",
+      "label": "JSON_EXTRACT",
+      "insertText": "JSON_EXTRACT"
+    },
+    {
+      "detail": "JSON_INSERT",
+      "documentation": "",
+      "label": "JSON_INSERT",
+      "insertText": "JSON_INSERT"
+    },
+    {
+      "detail": "JSON_KEYS",
+      "documentation": "",
+      "label": "JSON_KEYS",
+      "insertText": "JSON_KEYS"
+    },
+    {
+      "detail": "JSON_LENGTH",
+      "documentation": "",
+      "label": "JSON_LENGTH",
+      "insertText": "JSON_LENGTH"
+    },
+    {
+      "detail": "JSON_MERGE",
+      "documentation": "",
+      "label": "JSON_MERGE",
+      "insertText": "JSON_MERGE"
+    },
+    {
+      "detail": "JSON_MERGE_PRESERVE",
+      "documentation": "",
+      "label": "JSON_MERGE_PRESERVE",
+      "insertText": "JSON_MERGE_PRESERVE"
+    },
+    {
+      "detail": "JSON_OBJECT",
+      "documentation": "",
+      "label": "JSON_OBJECT",
+      "insertText": "JSON_OBJECT"
+    },
+    {
+      "detail": "JSON_QUOTE",
+      "documentation": "",
+      "label": "JSON_QUOTE",
+      "insertText": "JSON_QUOTE"
+    },
+    {
+      "detail": "JSON_REMOVE",
+      "documentation": "",
+      "label": "JSON_REMOVE",
+      "insertText": "JSON_REMOVE"
+    },
+    {
+      "detail": "JSON_REPLACE",
+      "documentation": "",
+      "label": "JSON_REPLACE",
+      "insertText": "JSON_REPLACE"
+    },
+    {
+      "detail": "JSON_SEARCH",
+      "documentation": "",
+      "label": "JSON_SEARCH",
+      "insertText": "JSON_SEARCH"
+    },
+    {
+      "detail": "JSON_SET",
+      "documentation": "",
+      "label": "JSON_SET",
+      "insertText": "JSON_SET"
+    },
+    {
+      "detail": "JSON_TYPE",
+      "documentation": "",
+      "label": "JSON_TYPE",
+      "insertText": "JSON_TYPE"
+    },
+    {
+      "detail": "JSON_UNQUOTE",
+      "documentation": "",
+      "label": "JSON_UNQUOTE",
+      "insertText": "JSON_UNQUOTE"
+    },
+    {
+      "detail": "JSON_VALID",
+      "documentation": "",
+      "label": "JSON_VALID",
+      "insertText": "JSON_VALID"
+    },
+    {
+      "detail": "LAST_INSERT_ID",
+      "documentation": "",
+      "label": "LAST_INSERT_ID",
+      "insertText": "LAST_INSERT_ID"
+    },
+    {
+      "detail": "LCASE",
+      "documentation": "",
+      "label": "LCASE",
+      "insertText": "LCASE"
+    },
+    {
+      "detail": "LEAST",
+      "documentation": "",
+      "label": "LEAST",
+      "insertText": "LEAST"
+    },
+    {
+      "detail": "LENGTH",
+      "documentation": "",
+      "label": "LENGTH",
+      "insertText": "LENGTH"
+    },
+    {
+      "detail": "LineFromText",
+      "documentation": "",
+      "label": "LineFromText",
+      "insertText": "LineFromText"
+    },
+    {
+      "detail": "LineStringFromText",
+      "documentation": "",
+      "label": "LineStringFromText",
+      "insertText": "LineStringFromText"
+    },
+    {
+      "detail": "LineFromWKB",
+      "documentation": "",
+      "label": "LineFromWKB",
+      "insertText": "LineFromWKB"
+    },
+    {
+      "detail": "LineStringFromWKB",
+      "documentation": "",
+      "label": "LineStringFromWKB",
+      "insertText": "LineStringFromWKB"
+    },
+    {
+      "detail": "LineString",
+      "documentation": "",
+      "label": "LineString",
+      "insertText": "LineString"
+    },
+    {
+      "detail": "LOAD_FILE",
+      "documentation": "",
+      "label": "LOAD_FILE",
+      "insertText": "LOAD_FILE"
+    },
+    {
+      "detail": "MAKE_SET",
+      "documentation": "",
+      "label": "MAKE_SET",
+      "insertText": "MAKE_SET"
+    },
+    {
+      "detail": "MAKEDATE",
+      "documentation": "",
+      "label": "MAKEDATE",
+      "insertText": "MAKEDATE"
+    },
+    {
+      "detail": "MAKETIME",
+      "documentation": "",
+      "label": "MAKETIME",
+      "insertText": "MAKETIME"
+    },
+    {
+      "detail": "MASTER_POS_WAIT",
+      "documentation": "",
+      "label": "MASTER_POS_WAIT",
+      "insertText": "MASTER_POS_WAIT"
+    },
+    {
+      "detail": "MBRContains",
+      "documentation": "",
+      "label": "MBRContains",
+      "insertText": "MBRContains"
+    },
+    {
+      "detail": "MBRCoveredBy",
+      "documentation": "",
+      "label": "MBRCoveredBy",
+      "insertText": "MBRCoveredBy"
+    },
+    {
+      "detail": "MBRCovers",
+      "documentation": "",
+      "label": "MBRCovers",
+      "insertText": "MBRCovers"
+    },
+    {
+      "detail": "MBRDisjoint",
+      "documentation": "",
+      "label": "MBRDisjoint",
+      "insertText": "MBRDisjoint"
+    },
+    {
+      "detail": "MBREqual",
+      "documentation": "",
+      "label": "MBREqual",
+      "insertText": "MBREqual"
+    },
+    {
+      "detail": "MBREquals",
+      "documentation": "",
+      "label": "MBREquals",
+      "insertText": "MBREquals"
+    },
+    {
+      "detail": "MBRIntersects",
+      "documentation": "",
+      "label": "MBRIntersects",
+      "insertText": "MBRIntersects"
+    },
+    {
+      "detail": "MBROverlaps",
+      "documentation": "",
+      "label": "MBROverlaps",
+      "insertText": "MBROverlaps"
+    },
+    {
+      "detail": "MBRTouches",
+      "documentation": "",
+      "label": "MBRTouches",
+      "insertText": "MBRTouches"
+    },
+    {
+      "detail": "MBRWithin",
+      "documentation": "",
+      "label": "MBRWithin",
+      "insertText": "MBRWithin"
+    },
+    {
+      "detail": "MICROSECOND",
+      "documentation": "",
+      "label": "MICROSECOND",
+      "insertText": "MICROSECOND"
+    },
+    {
+      "detail": "MID",
+      "documentation": "",
+      "label": "MID",
+      "insertText": "MID"
+    },
+    {
+      "detail": "MLineFromText",
+      "documentation": "",
+      "label": "MLineFromText",
+      "insertText": "MLineFromText"
+    },
+    {
+      "detail": "MultiLineStringFromText",
+      "documentation": "",
+      "label": "MultiLineStringFromText",
+      "insertText": "MultiLineStringFromText"
+    },
+    {
+      "detail": "MLineFromWKB",
+      "documentation": "",
+      "label": "MLineFromWKB",
+      "insertText": "MLineFromWKB"
+    },
+    {
+      "detail": "MultiLineStringFromWKB",
+      "documentation": "",
+      "label": "MultiLineStringFromWKB",
+      "insertText": "MultiLineStringFromWKB"
+    },
+    {
+      "detail": "MONTHNAME",
+      "documentation": "",
+      "label": "MONTHNAME",
+      "insertText": "MONTHNAME"
+    },
+    {
+      "detail": "MPointFromText",
+      "documentation": "",
+      "label": "MPointFromText",
+      "insertText": "MPointFromText"
+    },
+    {
+      "detail": "MultiPointFromText",
+      "documentation": "",
+      "label": "MultiPointFromText",
+      "insertText": "MultiPointFromText"
+    },
+    {
+      "detail": "MPointFromWKB",
+      "documentation": "",
+      "label": "MPointFromWKB",
+      "insertText": "MPointFromWKB"
+    },
+    {
+      "detail": "MultiPointFromWKB",
+      "documentation": "",
+      "label": "MultiPointFromWKB",
+      "insertText": "MultiPointFromWKB"
+    },
+    {
+      "detail": "MPolyFromText",
+      "documentation": "",
+      "label": "MPolyFromText",
+      "insertText": "MPolyFromText"
+    },
+    {
+      "detail": "MultiPolygonFromText",
+      "documentation": "",
+      "label": "MultiPolygonFromText",
+      "insertText": "MultiPolygonFromText"
+    },
+    {
+      "detail": "MPolyFromWKB",
+      "documentation": "",
+      "label": "MPolyFromWKB",
+      "insertText": "MPolyFromWKB"
+    },
+    {
+      "detail": "MultiPolygonFromWKB",
+      "documentation": "",
+      "label": "MultiPolygonFromWKB",
+      "insertText": "MultiPolygonFromWKB"
+    },
+    {
+      "detail": "MultiLineString",
+      "documentation": "",
+      "label": "MultiLineString",
+      "insertText": "MultiLineString"
+    },
+    {
+      "detail": "MultiPoint",
+      "documentation": "",
+      "label": "MultiPoint",
+      "insertText": "MultiPoint"
+    },
+    {
+      "detail": "MultiPolygon",
+      "documentation": "",
+      "label": "MultiPolygon",
+      "insertText": "MultiPolygon"
+    },
+    {
+      "detail": "NAME_CONST",
+      "documentation": "",
+      "label": "NAME_CONST",
+      "insertText": "NAME_CONST"
+    },
+    {
+      "detail": "NOT IN",
+      "documentation": "",
+      "label": "NOT IN",
+      "insertText": "NOT IN"
+    },
+    {
+      "detail": "NumGeometries",
+      "documentation": "",
+      "label": "NumGeometries",
+      "insertText": "NumGeometries"
+    },
+    {
+      "detail": "NumInteriorRings",
+      "documentation": "",
+      "label": "NumInteriorRings",
+      "insertText": "NumInteriorRings"
+    },
+    {
+      "detail": "NumPoints",
+      "documentation": "",
+      "label": "NumPoints",
+      "insertText": "NumPoints"
+    },
+    {
+      "detail": "OCT",
+      "documentation": "",
+      "label": "OCT",
+      "insertText": "OCT"
+    },
+    {
+      "detail": "OCTET_LENGTH",
+      "documentation": "",
+      "label": "OCTET_LENGTH",
+      "insertText": "OCTET_LENGTH"
+    },
+    {
+      "detail": "OLD_PASSWORD",
+      "documentation": "",
+      "label": "OLD_PASSWORD",
+      "insertText": "OLD_PASSWORD"
+    },
+    {
+      "detail": "ORD",
+      "documentation": "",
+      "label": "ORD",
+      "insertText": "ORD"
+    },
+    {
+      "detail": "Overlaps",
+      "documentation": "",
+      "label": "Overlaps",
+      "insertText": "Overlaps"
+    },
+    {
+      "detail": "PASSWORD",
+      "documentation": "",
+      "label": "PASSWORD",
+      "insertText": "PASSWORD"
+    },
+    {
+      "detail": "PERIOD_ADD",
+      "documentation": "",
+      "label": "PERIOD_ADD",
+      "insertText": "PERIOD_ADD"
+    },
+    {
+      "detail": "PERIOD_DIFF",
+      "documentation": "",
+      "label": "PERIOD_DIFF",
+      "insertText": "PERIOD_DIFF"
+    },
+    {
+      "detail": "Point",
+      "documentation": "",
+      "label": "Point",
+      "insertText": "Point"
+    },
+    {
+      "detail": "PointFromText",
+      "documentation": "",
+      "label": "PointFromText",
+      "insertText": "PointFromText"
+    },
+    {
+      "detail": "PointFromWKB",
+      "documentation": "",
+      "label": "PointFromWKB",
+      "insertText": "PointFromWKB"
+    },
+    {
+      "detail": "PointN",
+      "documentation": "",
+      "label": "PointN",
+      "insertText": "PointN"
+    },
+    {
+      "detail": "PolyFromText",
+      "documentation": "",
+      "label": "PolyFromText",
+      "insertText": "PolyFromText"
+    },
+    {
+      "detail": "PolygonFromText",
+      "documentation": "",
+      "label": "PolygonFromText",
+      "insertText": "PolygonFromText"
+    },
+    {
+      "detail": "PolyFromWKB",
+      "documentation": "",
+      "label": "PolyFromWKB",
+      "insertText": "PolyFromWKB"
+    },
+    {
+      "detail": "PolygonFromWKB",
+      "documentation": "",
+      "label": "PolygonFromWKB",
+      "insertText": "PolygonFromWKB"
+    },
+    {
+      "detail": "Polygon",
+      "documentation": "",
+      "label": "Polygon",
+      "insertText": "Polygon"
+    },
+    {
+      "detail": "POW",
+      "documentation": "",
+      "label": "POW",
+      "insertText": "POW"
+    },
+    {
+      "detail": "PROCEDURE ANALYSE",
+      "documentation": "",
+      "label": "PROCEDURE ANALYSE",
+      "insertText": "PROCEDURE ANALYSE"
+    },
+    {
+      "detail": "QUOTE",
+      "documentation": "",
+      "label": "QUOTE",
+      "insertText": "QUOTE"
+    },
+    {
+      "detail": "RANDOM_BYTES",
+      "documentation": "",
+      "label": "RANDOM_BYTES",
+      "insertText": "RANDOM_BYTES"
+    },
+    {
+      "detail": "RELEASE_ALL_LOCKS",
+      "documentation": "",
+      "label": "RELEASE_ALL_LOCKS",
+      "insertText": "RELEASE_ALL_LOCKS"
+    },
+    {
+      "detail": "RELEASE_LOCK",
+      "documentation": "",
+      "label": "RELEASE_LOCK",
+      "insertText": "RELEASE_LOCK"
+    },
+    {
+      "detail": "ROW_COUNT",
+      "documentation": "",
+      "label": "ROW_COUNT",
+      "insertText": "ROW_COUNT"
+    },
+    {
+      "detail": "SCHEMA",
+      "documentation": "",
+      "label": "SCHEMA",
+      "insertText": "SCHEMA"
+    },
+    {
+      "detail": "SEC_TO_TIME",
+      "documentation": "",
+      "label": "SEC_TO_TIME",
+      "insertText": "SEC_TO_TIME"
+    },
+    {
+      "detail": "SESSION_USER",
+      "documentation": "",
+      "label": "SESSION_USER",
+      "insertText": "SESSION_USER"
+    },
+    {
+      "detail": "SHA",
+      "documentation": "",
+      "label": "SHA",
+      "insertText": "SHA"
+    },
+    {
+      "detail": "SLEEP",
+      "documentation": "",
+      "label": "SLEEP",
+      "insertText": "SLEEP"
+    },
+    {
+      "detail": "SOUNDEX",
+      "documentation": "",
+      "label": "SOUNDEX",
+      "insertText": "SOUNDEX"
+    },
+    {
+      "detail": "SPACE",
+      "documentation": "",
+      "label": "SPACE",
+      "insertText": "SPACE"
+    },
+    {
+      "detail": "SRID",
+      "documentation": "",
+      "label": "SRID",
+      "insertText": "SRID"
+    },
+    {
+      "detail": "ST_Area",
+      "documentation": "",
+      "label": "ST_Area",
+      "insertText": "ST_Area"
+    },
+    {
+      "detail": "ST_AsBinary",
+      "documentation": "",
+      "label": "ST_AsBinary",
+      "insertText": "ST_AsBinary"
+    },
+    {
+      "detail": "ST_AsWKB",
+      "documentation": "",
+      "label": "ST_AsWKB",
+      "insertText": "ST_AsWKB"
+    },
+    {
+      "detail": "ST_AsGeoJSON",
+      "documentation": "",
+      "label": "ST_AsGeoJSON",
+      "insertText": "ST_AsGeoJSON"
+    },
+    {
+      "detail": "ST_AsText",
+      "documentation": "",
+      "label": "ST_AsText",
+      "insertText": "ST_AsText"
+    },
+    {
+      "detail": "ST_AsWKT",
+      "documentation": "",
+      "label": "ST_AsWKT",
+      "insertText": "ST_AsWKT"
+    },
+    {
+      "detail": "ST_Buffer",
+      "documentation": "",
+      "label": "ST_Buffer",
+      "insertText": "ST_Buffer"
+    },
+    {
+      "detail": "ST_Buffer_Strategy",
+      "documentation": "",
+      "label": "ST_Buffer_Strategy",
+      "insertText": "ST_Buffer_Strategy"
+    },
+    {
+      "detail": "ST_Centroid",
+      "documentation": "",
+      "label": "ST_Centroid",
+      "insertText": "ST_Centroid"
+    },
+    {
+      "detail": "ST_Contains",
+      "documentation": "",
+      "label": "ST_Contains",
+      "insertText": "ST_Contains"
+    },
+    {
+      "detail": "ST_ConvexHull",
+      "documentation": "",
+      "label": "ST_ConvexHull",
+      "insertText": "ST_ConvexHull"
+    },
+    {
+      "detail": "ST_Crosses",
+      "documentation": "",
+      "label": "ST_Crosses",
+      "insertText": "ST_Crosses"
+    },
+    {
+      "detail": "ST_Difference",
+      "documentation": "",
+      "label": "ST_Difference",
+      "insertText": "ST_Difference"
+    },
+    {
+      "detail": "ST_Dimension",
+      "documentation": "",
+      "label": "ST_Dimension",
+      "insertText": "ST_Dimension"
+    },
+    {
+      "detail": "ST_Disjoint",
+      "documentation": "",
+      "label": "ST_Disjoint",
+      "insertText": "ST_Disjoint"
+    },
+    {
+      "detail": "ST_Distance",
+      "documentation": "",
+      "label": "ST_Distance",
+      "insertText": "ST_Distance"
+    },
+    {
+      "detail": "ST_Distance_Sphere",
+      "documentation": "",
+      "label": "ST_Distance_Sphere",
+      "insertText": "ST_Distance_Sphere"
+    },
+    {
+      "detail": "ST_EndPoint",
+      "documentation": "",
+      "label": "ST_EndPoint",
+      "insertText": "ST_EndPoint"
+    },
+    {
+      "detail": "ST_Envelope",
+      "documentation": "",
+      "label": "ST_Envelope",
+      "insertText": "ST_Envelope"
+    },
+    {
+      "detail": "ST_Equals",
+      "documentation": "",
+      "label": "ST_Equals",
+      "insertText": "ST_Equals"
+    },
+    {
+      "detail": "ST_ExteriorRing",
+      "documentation": "",
+      "label": "ST_ExteriorRing",
+      "insertText": "ST_ExteriorRing"
+    },
+    {
+      "detail": "ST_GeoHash",
+      "documentation": "",
+      "label": "ST_GeoHash",
+      "insertText": "ST_GeoHash"
+    },
+    {
+      "detail": "ST_GeomCollFromText",
+      "documentation": "",
+      "label": "ST_GeomCollFromText",
+      "insertText": "ST_GeomCollFromText"
+    },
+    {
+      "detail": "ST_GeometryCollectionFromText",
+      "documentation": "",
+      "label": "ST_GeometryCollectionFromText",
+      "insertText": "ST_GeometryCollectionFromText"
+    },
+    {
+      "detail": "ST_GeomCollFromTxt",
+      "documentation": "",
+      "label": "ST_GeomCollFromTxt",
+      "insertText": "ST_GeomCollFromTxt"
+    },
+    {
+      "detail": "ST_GeomCollFromWKB",
+      "documentation": "",
+      "label": "ST_GeomCollFromWKB",
+      "insertText": "ST_GeomCollFromWKB"
+    },
+    {
+      "detail": "ST_GeometryCollectionFromWKB",
+      "documentation": "",
+      "label": "ST_GeometryCollectionFromWKB",
+      "insertText": "ST_GeometryCollectionFromWKB"
+    },
+    {
+      "detail": "ST_GeometryN",
+      "documentation": "",
+      "label": "ST_GeometryN",
+      "insertText": "ST_GeometryN"
+    },
+    {
+      "detail": "ST_GeometryType",
+      "documentation": "",
+      "label": "ST_GeometryType",
+      "insertText": "ST_GeometryType"
+    },
+    {
+      "detail": "ST_GeomFromGeoJSON",
+      "documentation": "",
+      "label": "ST_GeomFromGeoJSON",
+      "insertText": "ST_GeomFromGeoJSON"
+    },
+    {
+      "detail": "ST_GeomFromText",
+      "documentation": "",
+      "label": "ST_GeomFromText",
+      "insertText": "ST_GeomFromText"
+    },
+    {
+      "detail": "ST_GeometryFromText",
+      "documentation": "",
+      "label": "ST_GeometryFromText",
+      "insertText": "ST_GeometryFromText"
+    },
+    {
+      "detail": "ST_GeomFromWKB",
+      "documentation": "",
+      "label": "ST_GeomFromWKB",
+      "insertText": "ST_GeomFromWKB"
+    },
+    {
+      "detail": "ST_GeometryFromWKB",
+      "documentation": "",
+      "label": "ST_GeometryFromWKB",
+      "insertText": "ST_GeometryFromWKB"
+    },
+    {
+      "detail": "ST_InteriorRingN",
+      "documentation": "",
+      "label": "ST_InteriorRingN",
+      "insertText": "ST_InteriorRingN"
+    },
+    {
+      "detail": "ST_Intersection",
+      "documentation": "",
+      "label": "ST_Intersection",
+      "insertText": "ST_Intersection"
+    },
+    {
+      "detail": "ST_Intersects",
+      "documentation": "",
+      "label": "ST_Intersects",
+      "insertText": "ST_Intersects"
+    },
+    {
+      "detail": "ST_IsClosed",
+      "documentation": "",
+      "label": "ST_IsClosed",
+      "insertText": "ST_IsClosed"
+    },
+    {
+      "detail": "ST_IsEmpty",
+      "documentation": "",
+      "label": "ST_IsEmpty",
+      "insertText": "ST_IsEmpty"
+    },
+    {
+      "detail": "ST_IsSimple",
+      "documentation": "",
+      "label": "ST_IsSimple",
+      "insertText": "ST_IsSimple"
+    },
+    {
+      "detail": "ST_IsValid",
+      "documentation": "",
+      "label": "ST_IsValid",
+      "insertText": "ST_IsValid"
+    },
+    {
+      "detail": "ST_LatFromGeoHash",
+      "documentation": "",
+      "label": "ST_LatFromGeoHash",
+      "insertText": "ST_LatFromGeoHash"
+    },
+    {
+      "detail": "ST_Length",
+      "documentation": "",
+      "label": "ST_Length",
+      "insertText": "ST_Length"
+    },
+    {
+      "detail": "ST_LineFromText",
+      "documentation": "",
+      "label": "ST_LineFromText",
+      "insertText": "ST_LineFromText"
+    },
+    {
+      "detail": "ST_LineStringFromText",
+      "documentation": "",
+      "label": "ST_LineStringFromText",
+      "insertText": "ST_LineStringFromText"
+    },
+    {
+      "detail": "ST_LineFromWKB",
+      "documentation": "",
+      "label": "ST_LineFromWKB",
+      "insertText": "ST_LineFromWKB"
+    },
+    {
+      "detail": "ST_LineStringFromWKB",
+      "documentation": "",
+      "label": "ST_LineStringFromWKB",
+      "insertText": "ST_LineStringFromWKB"
+    },
+    {
+      "detail": "ST_LongFromGeoHash",
+      "documentation": "",
+      "label": "ST_LongFromGeoHash",
+      "insertText": "ST_LongFromGeoHash"
+    },
+    {
+      "detail": "ST_MakeEnvelope",
+      "documentation": "",
+      "label": "ST_MakeEnvelope",
+      "insertText": "ST_MakeEnvelope"
+    },
+    {
+      "detail": "ST_MLineFromText",
+      "documentation": "",
+      "label": "ST_MLineFromText",
+      "insertText": "ST_MLineFromText"
+    },
+    {
+      "detail": "ST_MultiLineStringFromText",
+      "documentation": "",
+      "label": "ST_MultiLineStringFromText",
+      "insertText": "ST_MultiLineStringFromText"
+    },
+    {
+      "detail": "ST_MLineFromWKB",
+      "documentation": "",
+      "label": "ST_MLineFromWKB",
+      "insertText": "ST_MLineFromWKB"
+    },
+    {
+      "detail": "ST_MultiLineStringFromWKB",
+      "documentation": "",
+      "label": "ST_MultiLineStringFromWKB",
+      "insertText": "ST_MultiLineStringFromWKB"
+    },
+    {
+      "detail": "ST_MPointFromText",
+      "documentation": "",
+      "label": "ST_MPointFromText",
+      "insertText": "ST_MPointFromText"
+    },
+    {
+      "detail": "ST_MultiPointFromText",
+      "documentation": "",
+      "label": "ST_MultiPointFromText",
+      "insertText": "ST_MultiPointFromText"
+    },
+    {
+      "detail": "ST_MPointFromWKB",
+      "documentation": "",
+      "label": "ST_MPointFromWKB",
+      "insertText": "ST_MPointFromWKB"
+    },
+    {
+      "detail": "ST_MultiPointFromWKB",
+      "documentation": "",
+      "label": "ST_MultiPointFromWKB",
+      "insertText": "ST_MultiPointFromWKB"
+    },
+    {
+      "detail": "ST_MPolyFromText",
+      "documentation": "",
+      "label": "ST_MPolyFromText",
+      "insertText": "ST_MPolyFromText"
+    },
+    {
+      "detail": "ST_MultiPolygonFromText",
+      "documentation": "",
+      "label": "ST_MultiPolygonFromText",
+      "insertText": "ST_MultiPolygonFromText"
+    },
+    {
+      "detail": "ST_MPolyFromWKB",
+      "documentation": "",
+      "label": "ST_MPolyFromWKB",
+      "insertText": "ST_MPolyFromWKB"
+    },
+    {
+      "detail": "ST_MultiPolygonFromWKB",
+      "documentation": "",
+      "label": "ST_MultiPolygonFromWKB",
+      "insertText": "ST_MultiPolygonFromWKB"
+    },
+    {
+      "detail": "ST_NumGeometries",
+      "documentation": "",
+      "label": "ST_NumGeometries",
+      "insertText": "ST_NumGeometries"
+    },
+    {
+      "detail": "ST_NumInteriorRing",
+      "documentation": "",
+      "label": "ST_NumInteriorRing",
+      "insertText": "ST_NumInteriorRing"
+    },
+    {
+      "detail": "ST_NumInteriorRings",
+      "documentation": "",
+      "label": "ST_NumInteriorRings",
+      "insertText": "ST_NumInteriorRings"
+    },
+    {
+      "detail": "ST_NumPoints",
+      "documentation": "",
+      "label": "ST_NumPoints",
+      "insertText": "ST_NumPoints"
+    },
+    {
+      "detail": "ST_Overlaps",
+      "documentation": "",
+      "label": "ST_Overlaps",
+      "insertText": "ST_Overlaps"
+    },
+    {
+      "detail": "ST_PointFromGeoHash",
+      "documentation": "",
+      "label": "ST_PointFromGeoHash",
+      "insertText": "ST_PointFromGeoHash"
+    },
+    {
+      "detail": "ST_PointFromText",
+      "documentation": "",
+      "label": "ST_PointFromText",
+      "insertText": "ST_PointFromText"
+    },
+    {
+      "detail": "ST_PointFromWKB",
+      "documentation": "",
+      "label": "ST_PointFromWKB",
+      "insertText": "ST_PointFromWKB"
+    },
+    {
+      "detail": "ST_PointN",
+      "documentation": "",
+      "label": "ST_PointN",
+      "insertText": "ST_PointN"
+    },
+    {
+      "detail": "ST_PolyFromText",
+      "documentation": "",
+      "label": "ST_PolyFromText",
+      "insertText": "ST_PolyFromText"
+    },
+    {
+      "detail": "ST_PolygonFromText",
+      "documentation": "",
+      "label": "ST_PolygonFromText",
+      "insertText": "ST_PolygonFromText"
+    },
+    {
+      "detail": "ST_PolyFromWKB",
+      "documentation": "",
+      "label": "ST_PolyFromWKB",
+      "insertText": "ST_PolyFromWKB"
+    },
+    {
+      "detail": "ST_PolygonFromWKB",
+      "documentation": "",
+      "label": "ST_PolygonFromWKB",
+      "insertText": "ST_PolygonFromWKB"
+    },
+    {
+      "detail": "ST_Simplify",
+      "documentation": "",
+      "label": "ST_Simplify",
+      "insertText": "ST_Simplify"
+    },
+    {
+      "detail": "ST_SRID",
+      "documentation": "",
+      "label": "ST_SRID",
+      "insertText": "ST_SRID"
+    },
+    {
+      "detail": "ST_StartPoint",
+      "documentation": "",
+      "label": "ST_StartPoint",
+      "insertText": "ST_StartPoint"
+    },
+    {
+      "detail": "ST_SymDifference",
+      "documentation": "",
+      "label": "ST_SymDifference",
+      "insertText": "ST_SymDifference"
+    },
+    {
+      "detail": "ST_Touches",
+      "documentation": "",
+      "label": "ST_Touches",
+      "insertText": "ST_Touches"
+    },
+    {
+      "detail": "ST_Union",
+      "documentation": "",
+      "label": "ST_Union",
+      "insertText": "ST_Union"
+    },
+    {
+      "detail": "ST_Validate",
+      "documentation": "",
+      "label": "ST_Validate",
+      "insertText": "ST_Validate"
+    },
+    {
+      "detail": "ST_Within",
+      "documentation": "",
+      "label": "ST_Within",
+      "insertText": "ST_Within"
+    },
+    {
+      "detail": "ST_X",
+      "documentation": "",
+      "label": "ST_X",
+      "insertText": "ST_X"
+    },
+    {
+      "detail": "ST_Y",
+      "documentation": "",
+      "label": "ST_Y",
+      "insertText": "ST_Y"
+    },
+    {
+      "detail": "StartPoint",
+      "documentation": "",
+      "label": "StartPoint",
+      "insertText": "StartPoint"
+    },
+    {
+      "detail": "STD",
+      "documentation": "",
+      "label": "STD",
+      "insertText": "STD"
+    },
+    {
+      "detail": "STDDEV",
+      "documentation": "",
+      "label": "STDDEV",
+      "insertText": "STDDEV"
+    },
+    {
+      "detail": "STR_TO_DATE",
+      "documentation": "",
+      "label": "STR_TO_DATE",
+      "insertText": "STR_TO_DATE"
+    },
+    {
+      "detail": "STRCMP",
+      "documentation": "",
+      "label": "STRCMP",
+      "insertText": "STRCMP"
+    },
+    {
+      "detail": "SUBDATE",
+      "documentation": "",
+      "label": "SUBDATE",
+      "insertText": "SUBDATE"
+    },
+    {
+      "detail": "SUBSTRING_INDEX",
+      "documentation": "",
+      "label": "SUBSTRING_INDEX",
+      "insertText": "SUBSTRING_INDEX"
+    },
+    {
+      "detail": "SUBTIME",
+      "documentation": "",
+      "label": "SUBTIME",
+      "insertText": "SUBTIME"
+    },
+    {
+      "detail": "SYSDATE",
+      "documentation": "",
+      "label": "SYSDATE",
+      "insertText": "SYSDATE"
+    },
+    {
+      "detail": "SYSTEM_USER",
+      "documentation": "",
+      "label": "SYSTEM_USER",
+      "insertText": "SYSTEM_USER"
+    },
+    {
+      "detail": "TIME",
+      "documentation": "",
+      "label": "TIME",
+      "insertText": "TIME"
+    },
+    {
+      "detail": "TIME_FORMAT",
+      "documentation": "",
+      "label": "TIME_FORMAT",
+      "insertText": "TIME_FORMAT"
+    },
+    {
+      "detail": "TIME_TO_SEC",
+      "documentation": "",
+      "label": "TIME_TO_SEC",
+      "insertText": "TIME_TO_SEC"
+    },
+    {
+      "detail": "TIMEDIFF",
+      "documentation": "",
+      "label": "TIMEDIFF",
+      "insertText": "TIMEDIFF"
+    },
+    {
+      "detail": "TIMESTAMP",
+      "documentation": "",
+      "label": "TIMESTAMP",
+      "insertText": "TIMESTAMP"
+    },
+    {
+      "detail": "TO_DAYS",
+      "documentation": "",
+      "label": "TO_DAYS",
+      "insertText": "TO_DAYS"
+    },
+    {
+      "detail": "TO_SECONDS",
+      "documentation": "",
+      "label": "TO_SECONDS",
+      "insertText": "TO_SECONDS"
+    },
+    {
+      "detail": "Touches",
+      "documentation": "",
+      "label": "Touches",
+      "insertText": "Touches"
+    },
+    {
+      "detail": "UCASE",
+      "documentation": "",
+      "label": "UCASE",
+      "insertText": "UCASE"
+    },
+    {
+      "detail": "UNCOMPRESS",
+      "documentation": "",
+      "label": "UNCOMPRESS",
+      "insertText": "UNCOMPRESS"
+    },
+    {
+      "detail": "UNCOMPRESSED_LENGTH",
+      "documentation": "",
+      "label": "UNCOMPRESSED_LENGTH",
+      "insertText": "UNCOMPRESSED_LENGTH"
+    },
+    {
+      "detail": "UNHEX",
+      "documentation": "",
+      "label": "UNHEX",
+      "insertText": "UNHEX"
+    },
+    {
+      "detail": "UpdateXML",
+      "documentation": "",
+      "label": "UpdateXML",
+      "insertText": "UpdateXML"
+    },
+    {
+      "detail": "USER",
+      "documentation": "",
+      "label": "USER",
+      "insertText": "USER"
+    },
+    {
+      "detail": "UTC_DATE",
+      "documentation": "",
+      "label": "UTC_DATE",
+      "insertText": "UTC_DATE"
+    },
+    {
+      "detail": "UTC_TIME",
+      "documentation": "",
+      "label": "UTC_TIME",
+      "insertText": "UTC_TIME"
+    },
+    {
+      "detail": "UTC_TIMESTAMP",
+      "documentation": "",
+      "label": "UTC_TIMESTAMP",
+      "insertText": "UTC_TIMESTAMP"
+    },
+    {
+      "detail": "UUID_SHORT",
+      "documentation": "",
+      "label": "UUID_SHORT",
+      "insertText": "UUID_SHORT"
+    },
+    {
+      "detail": "VALIDATE_PASSWORD_STRENGTH",
+      "documentation": "",
+      "label": "VALIDATE_PASSWORD_STRENGTH",
+      "insertText": "VALIDATE_PASSWORD_STRENGTH"
+    },
+    {
+      "detail": "VALUES",
+      "documentation": "",
+      "label": "VALUES",
+      "insertText": "VALUES"
+    },
+    {
+      "detail": "VERSION",
+      "documentation": "",
+      "label": "VERSION",
+      "insertText": "VERSION"
+    },
+    {
+      "detail": "WAIT_FOR_EXECUTED_GTID_SET",
+      "documentation": "",
+      "label": "WAIT_FOR_EXECUTED_GTID_SET",
+      "insertText": "WAIT_FOR_EXECUTED_GTID_SET"
+    },
+    {
+      "detail": "WAIT_UNTIL_SQL_THREAD_AFTER_GTIDS",
+      "documentation": "",
+      "label": "WAIT_UNTIL_SQL_THREAD_AFTER_GTIDS",
+      "insertText": "WAIT_UNTIL_SQL_THREAD_AFTER_GTIDS"
+    },
+    {
+      "detail": "WEEKDAY",
+      "documentation": "",
+      "label": "WEEKDAY",
+      "insertText": "WEEKDAY"
+    },
+    {
+      "detail": "WEEKOFYEAR",
+      "documentation": "",
+      "label": "WEEKOFYEAR",
+      "insertText": "WEEKOFYEAR"
+    },
+    {
+      "detail": "WEIGHT_STRING",
+      "documentation": "",
+      "label": "WEIGHT_STRING",
+      "insertText": "WEIGHT_STRING"
+    },
+    {
+      "detail": "Within",
+      "documentation": "",
+      "label": "Within",
+      "insertText": "Within"
+    },
+    {
+      "detail": "X",
+      "documentation": "",
+      "label": "X",
+      "insertText": "X"
+    },
+    {
+      "detail": "Y",
+      "documentation": "",
+      "label": "Y",
+      "insertText": "Y"
+    },
+    {
+      "detail": "YEARWEEK",
+      "documentation": "",
+      "label": "YEARWEEK",
+      "insertText": "YEARWEEK"
+    }
+  ],
+  "flinkSQLKeywords": [
+    "ABSOLUTE",
+    "ADA",
+    "ADD",
+    "ADMIN",
+    "AFTER",
+    "ALL",
+    "ALLOCATE",
+    "ALTER",
+    "ANY",
+    "ARE",
+    "AS",
+    "ASC",
+    "ASENSITIVE",
+    "ASSERTION",
+    "ASSIGNMENT",
+    "ASYMMETRIC",
+    "AT",
+    "ATOMIC",
+    "AUTHORIZATION",
+    "BEFORE",
+    "BEGIN",
+    "BOTH",
+    "BREADTH",
+    "BY",
+    "C",
+    "CALL",
+    "CALLED",
+    "CASCADE",
+    "CASCADED",
+    "CASE",
+    "CATALOG",
+    "CATALOG_NAME",
+    "CHAIN",
+    "CHARACTERISTICS",
+    "CHARACTER_SET_CATALOG",
+    "CHARACTER_SET_NAME",
+    "CHARACTER_SET_SCHEMA",
+    "CHECK",
+    "CLASS_ORIGIN",
+    "CLOB",
+    "CLOSE",
+    "COBOL",
+    "COLLATE",
+    "COLLATION_CATALOG",
+    "COLLATION_NAME",
+    "COLLATION_SCHEMA",
+    "COLUMN",
+    "COLUMN_NAME",
+    "COMMAND_FUNCTION",
+    "COMMAND_FUNCTION_CODE",
+    "COMMIT",
+    "COMMITTED",
+    "CONDITION_NUMBER",
+    "CONNECT",
+    "CONNECTION",
+    "CONNECTION_NAME",
+    "CONSTRAINT",
+    "CONSTRAINTS",
+    "CONSTRAINT_CATALOG",
+    "CONSTRAINT_NAME",
+    "CONSTRAINT_SCHEMA",
+    "CONSTRUCTOR",
+    "CONTAINS",
+    "CONTINUE",
+    "CREATE",
+    "CROSS",
+    "CUBE",
+    "CURRENT",
+    "CURRENT_PATH",
+    "CURRENT_ROLE",
+    "CURSOR",
+    "CURSOR_NAME",
+    "CYCLE",
+    "DATA",
+    "DATETIME_INTERVAL_CODE",
+    "DATETIME_INTERVAL_PRECISION",
+    "DEALLOCATE",
+    "DECLARE",
+    "DEFAULTS",
+    "DEFERRABLE",
+    "DEFERRED",
+    "DEFINED",
+    "DEFINER",
+    "DELETE",
+    "DEREF",
+    "DESC",
+    "DESCRIBE",
+    "DESCRIPTOR",
+    "DETERMINISTIC",
+    "DIAGNOSTICS",
+    "DISCONNECT",
+    "DISPATCH",
+    "DISTINCT",
+    "DOMAIN",
+    "DROP",
+    "DYNAMIC",
+    "DYNAMIC_FUNCTION",
+    "DYNAMIC_FUNCTION_CODE",
+    "EACH",
+    "ELSE",
+    "END",
+    "END-EXEC",
+    "EMIT",
+    "EQUALS",
+    "ESCAPE",
+    "EVERY",
+    "EXCEPT",
+    "EXCLUDING",
+    "EXEC",
+    "EXECUTE",
+    "EXISTS",
+    "EXPLAIN",
+    "EXTERNAL",
+    "FALSE",
+    "FETCH",
+    "FINAL",
+    "FIRST",
+    "FOR",
+    "FOREIGN",
+    "FORTRAN",
+    "FOUND",
+    "FREE",
+    "FROM",
+    "FULL",
+    "FUNCTION",
+    "G",
+    "GENERAL",
+    "GENERATED",
+    "GET",
+    "GLOBAL",
+    "GO",
+    "GOTO",
+    "GRANT",
+    "GRANTED",
+    "GROUP",
+    "HAVING",
+    "HIERARCHY",
+    "HOLD",
+    "IDENTITY",
+    "IMMEDIATE",
+    "IMPLEMENTATION",
+    "INCLUDING",
+    "INCREMENT",
+    "INITIALLY",
+    "INOUT",
+    "INPUT",
+    "INSENSITIVE",
+    "INSTANTIABLE",
+    "INTO",
+    "INVOKER",
+    "ISOLATION",
+    "KEY",
+    "KEY_MEMBER",
+    "KEY_TYPE",
+    "LANGUAGE",
+    "LARGE",
+    "LAST",
+    "LATERAL",
+    "LEADING",
+    "LEVEL",
+    "LIMIT",
+    "LOCAL",
+    "LOCATOR",
+    "MAP",
+    "MATCH",
+    "MAXVALUE",
+    "MESSAGE_LENGTH",
+    "MESSAGE_OCTET_LENGTH",
+    "MESSAGE_TEXT",
+    "METHOD",
+    "MINVALUE",
+    "MODIFIES",
+    "MORE",
+    "MUMPS",
+    "NAMES",
+    "NATURAL",
+    "NCLOB",
+    "NEW",
+    "NEXT",
+    "NO",
+    "NONE",
+    "NULLABLE",
+    "OBJECT",
+    "OF",
+    "OFFSET",
+    "OLD",
+    "ON",
+    "ONLY",
+    "OPEN",
+    "OPTION",
+    "OPTIONS",
+    "ORDER",
+    "ORDINALITY",
+    "OUT",
+    "OUTPUT",
+    "OVERLAPS",
+    "OVERRIDING",
+    "PAD",
+    "PARAMETER",
+    "PARAMETER_MODE",
+    "PARAMETER_SPECIFIC_CATALOG",
+    "PARAMETER_SPECIFIC_NAME",
+    "PARTIAL",
+    "PASCAL",
+    "PLACING",
+    "PLI",
+    "PREPARE",
+    "PRESERVE",
+    "PRIMARY",
+    "PRIOR",
+    "PRIVILEGES",
+    "PROCEDURE",
+    "PUBLIC",
+    "READS",
+    "RECURSIVE",
+    "REF",
+    "REFERENCES",
+    "REFERENCING",
+    "RELATIVE",
+    "REPEATABLE",
+    "RESET",
+    "RESTART",
+    "RESTRICT",
+    "RESULT",
+    "RETURN",
+    "RETURNED_LENGTH",
+    "RETURNED_OCTET_LENGTH",
+    "RETURNED_SQLSTATE",
+    "RETURNS",
+    "REVOKE",
+    "ROLE",
+    "ROLLBACK",
+    "ROLLUP",
+    "ROUTINE",
+    "ROUTINE_CATALOG",
+    "ROUTINE_NAME",
+    "ROUTINE_SCHEMA",
+    "ROW",
+    "ROWS",
+    "SCALE",
+    "SCHEMA_NAME",
+    "SCOPE",
+    "SCROLL",
+    "SEARCH",
+    "SECURITY",
+    "SELECT",
+    "SELF",
+    "SENSITIVE",
+    "SERIALIZABLE",
+    "SERVER_NAME",
+    "SESSION",
+    "SET",
+    "SETS",
+    "SIMILAR",
+    "SIMPLE",
+    "SIZE",
+    "SOME",
+    "SOURCE",
+    "SPECIFIC",
+    "SPECIFICTYPE",
+    "SPECIFIC_NAME",
+    "SQL",
+    "SQLEXCEPTION",
+    "SQLSTATE",
+    "START",
+    "STATE",
+    "STATEMENT",
+    "STATIC",
+    "STRUCTURE",
+    "SUBCLASS_ORIGIN",
+    "SYMMETRIC",
+    "SYSTEM",
+    "TABLE",
+    "TABLE_NAME",
+    "TEMPORARY",
+    "THEN",
+    "TIMEZONE_HOUR",
+    "TIMEZONE_MINUTE",
+    "TO",
+    "TRAILING",
+    "TRANSACTIONS_COMMITTED",
+    "TRANSACTIONS_ROLLED_BACK",
+    "TRANSFORM",
+    "TRANSFORMS",
+    "TRANSLATE",
+    "TRANSLATION",
+    "TREAT",
+    "TRIGGER",
+    "TRIGGER_CATALOG",
+    "TRIGGER_NAME",
+    "TRIGGER_SCHEMA",
+    "TRUE",
+    "TYPE",
+    "UNCOMMITTED",
+    "UNDER",
+    "UNIQUE",
+    "UNKNOWN",
+    "UNNAMED",
+    "UNNEST",
+    "UPDATE",
+    "USAGE",
+    "USER_DEFINED_TYPE_CATALOG",
+    "USER_DEFINED_TYPE_NAME",
+    "USER_DEFINED_TYPE_SCHEMA",
+    "USING",
+    "VIEW",
+    "WHEN",
+    "WHENEVER",
+    "WHERE",
+    "WITH",
+    "WORK",
+    "WRITE",
+    "ZONE",
+    "A",
+    "ACTION",
+    "ALLOW",
+    "ALWAYS",
+    "ARRAY",
+    "ATTRIBUTE",
+    "ATTRIBUTES",
+    "BERNOULLI",
+    "BYTES",
+    "CENTURY",
+    "CHARACTERS",
+    "CONDITION",
+    "CORR",
+    "CORRESPONDING",
+    "COVAR_POP",
+    "COVAR_SAMP",
+    "CUME_DIST",
+    "CURRENT_CATALOG",
+    "CURRENT_DEFAULT_TRANSFORM_GROUP",
+    "CURRENT_SCHEMA",
+    "CURRENT_TRANSFORM_GROUP_FOR_TYPE",
+    "DECADE",
+    "DEGREE",
+    "DEPTH",
+    "DERIVED",
+    "DESCRIPTION",
+    "DISALLOW",
+    "DOW",
+    "DOY",
+    "EPOCH",
+    "EXCEPTION",
+    "EXCLUDE",
+    "EXTEND",
+    "FILTER",
+    "FOLLOWING",
+    "FRAC_SECOND",
+    "FUSION",
+    "IMPORT",
+    "INDICATOR",
+    "INSTANCE",
+    "INTERSECTION",
+    "JAVA",
+    "K",
+    "LABEL",
+    "LIBRARY",
+    "M",
+    "MATCHED",
+    "MEMBER",
+    "MERGE",
+    "MILLENNIUM",
+    "MODULE",
+    "MULTISET",
+    "NAME",
+    "NESTING",
+    "NORMALIZE",
+    "NORMALIZED",
+    "NULLS",
+    "NUMBER",
+    "OCTETS",
+    "ORDERING",
+    "OTHERS",
+    "OVER",
+    "PARAMETER_NAME",
+    "PARAMETER_ORDINAL_POSITION",
+    "PARAMETER_SPECIFIC_SCHEMA",
+    "PARTITION",
+    "PASSTHROUGH",
+    "PATH",
+    "PERCENTILE_CONT",
+    "PERCENTILE_DISC",
+    "PERCENT_RANK",
+    "PLAN",
+    "PRECEDING",
+    "RANGE",
+    "RAW",
+    "REGR_AVGX",
+    "REGR_AVGY",
+    "REGR_COUNT",
+    "REGR_INTERCEPT",
+    "REGR_R2",
+    "REGR_SLOPE",
+    "REGR_SXX",
+    "REGR_SXY",
+    "REGR_SYY",
+    "RELEASE",
+    "RETURNED_CARDINALITY",
+    "SAVEPOINT",
+    "SCOPE_CATALOGS",
+    "SCOPE_NAME",
+    "SCOPE_SCHEMA",
+    "SECTION",
+    "SEQUENCE",
+    "SERVER",
+    "SQLWARNING",
+    "SQL_TSI_DAY",
+    "SQL_TSI_FRAC_SECOND",
+    "SQL_TSI_HOUR",
+    "SQL_TSI_MICROSECOND",
+    "SQL_TSI_MINUTE",
+    "SQL_TSI_MONTH",
+    "SQL_TSI_QUARTER",
+    "SQL_TSI_SECOND",
+    "SQL_TSI_WEEK",
+    "SQL_TSI_YEAR",
+    "STREAM",
+    "STRING",
+    "STYLE",
+    "SUBMULTISET",
+    "SUBSTITUTE",
+    "TABLESAMPLE",
+    "TIES",
+    "TOP_LEVEL_COUNT",
+    "TRANSACTION",
+    "TRANSACTIONS_ACTIVE",
+    "UESCAPE",
+    "UNBOUNDED",
+    "UPSERT",
+    "USER_DEFINED_TYPE_CODE",
+    "VALUE",
+    "WIDTH_BUCKET",
+    "WINDOW",
+    "WITHIN",
+    "WRAPPER",
+    "XML",
+    "ACCESSIBLE",
+    "ACCOUNT",
+    "AGAINST",
+    "AGGREGATE",
+    "ALGORITHM",
+    "ANALYSE",
+    "ANALYZE",
+    "AUTOEXTEND_SIZE",
+    "AUTO_INCREMENT",
+    "AVG_ROW_LENGTH",
+    "BACKUP",
+    "BINLOG",
+    "BLOCK",
+    "BOOL",
+    "BTREE",
+    "BYTE",
+    "CACHE",
+    "CHANGE",
+    "CHANGED",
+    "CHANNEL",
+    "CHECKSUM",
+    "CIPHER",
+    "CLIENT",
+    "CODE",
+    "COLUMNS",
+    "COLUMN_FORMAT",
+    "COMMENT",
+    "COMPACT",
+    "COMPLETION",
+    "COMPRESSED",
+    "COMPRESSION",
+    "CONCURRENT",
+    "CONSISTENT",
+    "CONTEXT",
+    "CPU",
+    "DATABASES",
+    "DATAFILE",
+    "DATETIME",
+    "DAY_HOUR",
+    "DAY_MICROSECOND",
+    "DAY_MINUTE",
+    "DAY_SECOND",
+    "DEFAULT_AUTH",
+    "DELAYED",
+    "DELAY_KEY_WRITE",
+    "DES_KEY_FILE",
+    "DIRECTORY",
+    "DISABLE",
+    "DISCARD",
+    "DISK",
+    "DISTINCTROW",
+    "DIV",
+    "DO",
+    "DUAL",
+    "DUMPFILE",
+    "DUPLICATE",
+    "ELSEIF",
+    "ENABLE",
+    "ENCLOSED",
+    "ENCRYPTION",
+    "ENDS",
+    "ENGINE",
+    "ENGINES",
+    "ENUM",
+    "ERROR",
+    "ERRORS",
+    "ESCAPED",
+    "EVENT",
+    "EVENTS",
+    "EXCHANGE",
+    "EXIT",
+    "EXPANSION",
+    "EXPIRE",
+    "EXPORT",
+    "EXTENDED",
+    "EXTENT_SIZE",
+    "FAST",
+    "FAULTS",
+    "FIELDS",
+    "FILE",
+    "FILE_BLOCK_SIZE",
+    "FIXED",
+    "FLOAT4",
+    "FLOAT8",
+    "FLUSH",
+    "FOLLOWS",
+    "FORCE",
+    "FULLTEXT",
+    "GEOMETRY",
+    "GEOMETRYCOLLECTION",
+    "GRANTS",
+    "GROUP_REPLICATION",
+    "HANDLER",
+    "HASH",
+    "HELP",
+    "HIGH_PRIORITY",
+    "HOST",
+    "HOSTS",
+    "HOUR_MICROSECOND",
+    "HOUR_MINUTE",
+    "HOUR_SECOND",
+    "IDENTIFIED",
+    "IGNORE",
+    "IGNORE_SERVER_IDS",
+    "INDEX",
+    "INDEXES",
+    "INFILE",
+    "INITIAL_SIZE",
+    "INSERT_METHOD",
+    "INSTALL",
+    "INT1",
+    "INT2",
+    "INT3",
+    "INT4",
+    "INT8",
+    "IO",
+    "IO_AFTER_GTIDS",
+    "IO_BEFORE_GTIDS",
+    "IO_THREAD",
+    "IPC",
+    "ISSUER",
+    "ITERATE",
+    "JSON",
+    "KEYS",
+    "KEY_BLOCK_SIZE",
+    "KILL",
+    "LEAVE",
+    "LEAVES",
+    "LESS",
+    "LINEAR",
+    "LINES",
+    "LINESTRING",
+    "LIST",
+    "LOAD",
+    "LOCK",
+    "LOCKS",
+    "LOGFILE",
+    "LOGS",
+    "LONG",
+    "LONGBLOB",
+    "LONGTEXT",
+    "LOOP",
+    "LOW_PRIORITY",
+    "MASTER",
+    "MASTER_AUTO_POSITION",
+    "MASTER_BIND",
+    "MASTER_CONNECT_RETRY",
+    "MASTER_DELAY",
+    "MASTER_HEARTBEAT_PERIOD",
+    "MASTER_HOST",
+    "MASTER_LOG_FILE",
+    "MASTER_LOG_POS",
+    "MASTER_PASSWORD",
+    "MASTER_PORT",
+    "MASTER_RETRY_COUNT",
+    "MASTER_SERVER_ID",
+    "MASTER_SSL",
+    "MASTER_SSL_CA",
+    "MASTER_SSL_CAPATH",
+    "MASTER_SSL_CERT",
+    "MASTER_SSL_CIPHER",
+    "MASTER_SSL_CRL",
+    "MASTER_SSL_CRLPATH",
+    "MASTER_SSL_KEY",
+    "MASTER_SSL_VERIFY_SERVER_CERT",
+    "MASTER_TLS_VERSION",
+    "MASTER_USER",
+    "MAX_CONNECTIONS_PER_HOUR",
+    "MAX_QUERIES_PER_HOUR",
+    "MAX_ROWS",
+    "MAX_SIZE",
+    "MAX_STATEMENT_TIME",
+    "MAX_UPDATES_PER_HOUR",
+    "MAX_USER_CONNECTIONS",
+    "MEDIUM",
+    "MEDIUMBLOB",
+    "MEDIUMINT",
+    "MEDIUMTEXT",
+    "MEMORY",
+    "MIDDLEINT",
+    "MIGRATE",
+    "MINUTE_MICROSECOND",
+    "MINUTE_SECOND",
+    "MIN_ROWS",
+    "MODE",
+    "MODIFY",
+    "MULTILINESTRING",
+    "MULTIPOINT",
+    "MULTIPOLYGON",
+    "MUTEX",
+    "MYSQL_ERRNO",
+    "NDB",
+    "NDBCLUSTER",
+    "NEVER",
+    "NODEGROUP",
+    "NONBLOCKING",
+    "NO_WAIT",
+    "NO_WRITE_TO_BINLOG",
+    "NVARCHAR",
+    "ONE",
+    "OPTIMIZE",
+    "OPTIMIZER_COSTS",
+    "OPTIONALLY",
+    "OUTFILE",
+    "OWNER",
+    "PACK_KEYS",
+    "PAGE",
+    "PARSER",
+    "PARSE_GCOL_EXPR",
+    "PARTITIONING",
+    "PARTITIONS",
+    "PHASE",
+    "PLUGIN",
+    "PLUGINS",
+    "PLUGIN_DIR",
+    "POINT",
+    "POLYGON",
+    "PORT",
+    "PRECEDES",
+    "PREV",
+    "PROCESSLIST",
+    "PROFILE",
+    "PROFILES",
+    "PROXY",
+    "PURGE",
+    "QUERY",
+    "QUICK",
+    "READ",
+    "READ_ONLY",
+    "READ_WRITE",
+    "REBUILD",
+    "RECOVER",
+    "REDOFILE",
+    "REDO_BUFFER_SIZE",
+    "REDUNDANT",
+    "RELAY",
+    "RELAYLOG",
+    "RELAY_LOG_FILE",
+    "RELAY_LOG_POS",
+    "RELAY_THREAD",
+    "RELOAD",
+    "REMOVE",
+    "RENAME",
+    "REORGANIZE",
+    "REPAIR",
+    "REPLICATE_DO_DB",
+    "REPLICATE_DO_TABLE",
+    "REPLICATE_IGNORE_DB",
+    "REPLICATE_IGNORE_TABLE",
+    "REPLICATE_REWRITE_DB",
+    "REPLICATE_WILD_DO_TABLE",
+    "REPLICATE_WILD_IGNORE_TABLE",
+    "REPLICATION",
+    "REQUIRE",
+    "RESIGNAL",
+    "RESTORE",
+    "RESUME",
+    "RLIKE",
+    "ROTATE",
+    "ROW_FORMAT",
+    "RTREE",
+    "SCHEDULE",
+    "SCHEMAS",
+    "SECOND_MICROSECOND",
+    "SEPARATOR",
+    "SERIAL",
+    "SHARE",
+    "SHOW",
+    "SHUTDOWN",
+    "SIGNAL",
+    "SIGNED",
+    "SLAVE",
+    "SLOW",
+    "SNAPSHOT",
+    "SOCKET",
+    "SONAME",
+    "SOUNDS",
+    "SPATIAL",
+    "SQL_AFTER_GTIDS",
+    "SQL_AFTER_MTS_GAPS",
+    "SQL_BEFORE_GTIDS",
+    "SQL_BIG_RESULT",
+    "SQL_BUFFER_RESULT",
+    "SQL_CACHE",
+    "SQL_CALC_FOUND_ROWS",
+    "SQL_NO_CACHE",
+    "SQL_SMALL_RESULT",
+    "SQL_THREAD",
+    "SSL",
+    "STACKED",
+    "STARTING",
+    "STARTS",
+    "STATS_AUTO_RECALC",
+    "STATS_PERSISTENT",
+    "STATS_SAMPLE_PAGES",
+    "STATUS",
+    "STOP",
+    "STORAGE",
+    "STORED",
+    "STRAIGHT_JOIN",
+    "SUBJECT",
+    "SUBPARTITION",
+    "SUBPARTITIONS",
+    "SUPER",
+    "SUSPEND",
+    "SWAPS",
+    "SWITCHES",
+    "TABLES",
+    "TABLESPACE",
+    "TABLE_CHECKSUM",
+    "TEMPTABLE",
+    "TERMINATED",
+    "TEXT",
+    "THAN",
+    "TINYBLOB",
+    "TINYTEXT",
+    "TRIGGERS",
+    "TYPES",
+    "UNDEFINED",
+    "UNDO",
+    "UNDOFILE",
+    "UNDO_BUFFER_SIZE",
+    "UNICODE",
+    "UNINSTALL",
+    "UNLOCK",
+    "UNSIGNED",
+    "UNTIL",
+    "UPGRADE",
+    "USE",
+    "USER_RESOURCES",
+    "USE_FRM",
+    "VALIDATION",
+    "VARCHARACTER",
+    "VARIABLES",
+    "VIRTUAL",
+    "WAIT",
+    "WARNINGS",
+    "WHILE",
+    "WITHOUT",
+    "X509",
+    "XA",
+    "XID",
+    "XOR",
+    "YEAR_MONTH",
+    "ZEROFILL"
+  ],
+  "flinkSQLTypes": [
+    "BIGINT",
+    "BINARY",
+    "BIT",
+    "BLOB",
+    "BOOLEAN",
+    "CHAR",
+    "CHARACTER",
+    "DATE",
+    "DEC",
+    "DECIMAL",
+    "DOUBLE",
+    "FLOAT",
+    "INT",
+    "INTEGER",
+    "NATIONAL",
+    "NCHAR",
+    "NUMERIC",
+    "PRECISION",
+    "REAL",
+    "SMALLINT",
+    "TIME",
+    "TIMESTAMP",
+    "TINYINT",
+    "VARBINARY",
+    "VARCHAR",
+    "VARYING",
+    "YEAR"
+  ],
+  "flinkSQLVariables": [],
+  "flinkSQLOperators": [
+		"AND",
+		"BETWEEN",
+		"IN",
+		"LIKE",
+		"NOT",
+		"OR",
+		"IS",
+		"NULL",
+		"INTERSECT",
+		"UNION",
+		"INNER",
+		"JOIN",
+		"LEFT",
+		"OUTER",
+		"RIGHT"
+	]
+}

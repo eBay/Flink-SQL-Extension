@@ -1,0 +1,44 @@
+/* overview-static */
+/* https://github.com/apache/flink/blob/a7551f6b01/flink-runtime-web/web-dashboard/src/app/pages/overview/statistic/overview-statistic.component.less */
+
+.overview-static .ant-card-head {
+  border-bottom: 0;
+}
+
+.overview-static .ant-card-body {
+  padding: 0 24px 8px;
+}
+
+.overview-static .total {
+  color: #52c41a;
+  font-size: 36px;
+  line-height: 38px;
+}
+
+.overview-static .footer {
+  padding-top: 9px;
+  margin-top: 16px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.overview-static .footer .field {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 22px;
+}
+.overview-static .footer .field span {
+  line-height: 22px;
+}
+.overview-static .footer .field span:last-child {
+  margin-left: 8px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.overview-static .col {
+  margin-bottom: 24px;
+}
+
+.overview-static .ant-divider {
+  margin: 0 12px;
+}

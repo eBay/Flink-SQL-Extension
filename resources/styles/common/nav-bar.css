@@ -1,0 +1,31 @@
+.nav-bar .logo {
+  height: 64px;
+  position: relative;
+  line-height: 64px;
+  padding-left: 24px;
+  transition: all 0.3s ease 0s;
+  overflow: hidden;
+}
+
+.nav-bar .logo > div {
+  line-height: 64px;
+}
+
+.nav-bar .logo > div > h1 {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.nav-bar .logo > div > img {
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  top: -4px;
+  position: relative;
+}

@@ -1,0 +1,21 @@
+.header-bar {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  position: relative;
+  padding: 0px 12px 0px 0px;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.header-bar .reload {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+}
+
+.header-bar .right {
+  float: right;
+  height: 100%;
+}
