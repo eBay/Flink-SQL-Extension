@@ -5,7 +5,7 @@ An extension for efficiently editing and developing Flink SQL. Provides a simpli
 ![Overview](images/documentation/flinksql-overview-1.png)
 
 ## Feature Overview
-### 1. Intelligent editor
+### 1. Intelligent Editor
   - Syntax highlighting
   - Autocomplete
   - Documentation for built-in functions
