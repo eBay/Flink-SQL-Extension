@@ -15,7 +15,7 @@ An extension for efficiently editing and developing Flink SQL. Provides a simpli
   - Provide required parameters for "CREATE TABLE" statements
   - Press tab to jump to target inputs
 
-### 3. Integration with local Flink cluster
+### 3. Integration with Local Flink cluster
   - Connect with your local Flink cluster
   - Submit file / selected SQL to configured cluster
   - Real-time submission feedback in output console
