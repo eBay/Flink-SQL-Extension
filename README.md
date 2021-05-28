@@ -1,6 +1,6 @@
 # Flink SQL Extension for Visual Studio Code
 
-An extension for efficiently editing and developing Flink SQL. Provides a simplified experience developing Flink SQL through intelligent editing features and a smooth integration with user's Flink cluster. 
+This toolkit helps you edit and develop your SQL efficiently. It provides a simplified experience on developing Flink SQL through intelligent editing features and a smooth integration with user's Flink cluster. 
 
 ![Overview](images/documentation/flinksql-overview-1.png)
 
@@ -26,18 +26,18 @@ An extension for efficiently editing and developing Flink SQL. Provides a simpli
   - Refresh the page to get the latest job status
 
 ### 5. Linking to Flink SQL Monitoring
-  - List flink jobs and show their status
+  - List Flink jobs and show their status
   - List task managers
   - Provide external links to Flink Web UI
 
 ## Supported Flink Environment
-Currently, the following list of flink environment are supported:
+Currently, the following list of Flink environment are supported:
 
 1.  Local Flink Clusters
   - Flink clusters that lives in your local environment
   - Start the SQL client with the following: ```./bin/sql-client.sh```
 
-Please specify the path to your flink cluster in settings of this extension.
+Please specify the path to your Flink cluster in settings of this extension.
 
 ## How to Install
 ### 1. Install from the VS Code Extension Marketplace
@@ -55,9 +55,9 @@ Please specify the path to your flink cluster in settings of this extension.
 ## How to use
 After you have downloaded this extension, follow the below steps to set up and start coding.
 
-### 1. Configure your flink cluster
+### 1. Configure your Flink cluster
 
-  Before directly submit flink sql from our editor, please go to settings to configure the following three fields:
+  Before directly submit Flink SQL from our editor, please go to settings to configure the following three fields:
   - Flink Dashboard URL
   - Flink Package Path
   - Command to start Flink SQL Client

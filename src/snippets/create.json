@@ -15,7 +15,6 @@
     ],
     "description": "File System Connector"
   },
-
   "Kafka": {
     "prefix": [
       "kafka"
@@ -35,7 +34,6 @@
     ],
     "description": "Kafka connector"
   },
-
   "Elasticsearch": {
     "prefix": [
       "elasticsearch"
@@ -55,7 +53,6 @@
     ],
     "description": "Elasticsearch connector"
   },
-
   "HBase": {
     "prefix": [
       "hbase"
@@ -75,7 +72,6 @@
     ],
     "description": "HBase connector"
   },
-
   "JDBC": {
     "prefix": [
       "jdbc"
@@ -92,4 +88,4 @@
     ],
     "description": "JDBC connector"
   }
-} 
+}

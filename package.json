@@ -17,7 +17,7 @@
 		"SQL",
 		"Flink",
 		"FlinkSQL"
-  ],
+	],
 	"activationEvents": [
 		"onStartupFinished"
 	],
@@ -119,7 +119,7 @@
 				"configuration": "./syntaxes/flinksql.language-configuration.json"
 			},
 			{
-				"id": "FlinkSqlCLI",
+				"id": "FlinkSQLCLI",
 				"mimetypes": [
 					"log",
 					"text/log",
@@ -129,7 +129,7 @@
 				],
 				"aliases": [
 					"flinkSQLCLI",
-					"FlinkSQLCLI",
+					"FlinkSqlCLI",
 					"FlinksqlCLI"
 				],
 				"configuration": "./syntaxes/flinksqlcli.language-configuration.json"
@@ -142,7 +142,7 @@
 				"path": "./syntaxes/flinksql.tmLanguage.json"
 			},
 			{
-				"language": "FlinkSqlCLI",
+				"language": "FlinkSQLCLI",
 				"scopeName": "flinksqlcli.log",
 				"path": "./syntaxes/flinksqlcli.tmLanguage"
 			}
@@ -255,12 +255,12 @@
 					},
 					"flinksql.packagePath": {
 						"type": "string",
-						"markdownDescription": "The absolute path of the flink package, could be an docker image or general flink package. More details see: [Download](https://ci.apache.org/projects/flink/flink-docs-release-1.12/try-flink/local_installation.html#step-1-download)"
+						"markdownDescription": "The absolute path of the Flink package, could be an docker image or general Flink package. More details see: [Download](https://ci.apache.org/projects/flink/flink-docs-release-1.12/try-flink/local_installation.html#step-1-download)"
 					},
 					"flinksql.startClientCommand": {
 						"type": "string",
 						"default": "./bin/sql-client.sh embedded",
-						"markdownDescription": "The flink sql client CLI start up command, default is `./bin/sql-client.sh embedded`. More details see: [Starting the SQL Client CLI](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/sqlClient.html#starting-the-sql-client-cli)"
+						"markdownDescription": "The Flink SQL client CLI start up command, default is `./bin/sql-client.sh embedded`. More details see: [Starting the SQL Client CLI](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/sqlClient.html#starting-the-sql-client-cli)"
 					}
 				}
 			}
