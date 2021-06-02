@@ -1,6 +1,6 @@
-# eBay Flink SQL Assistant for VS Code Guidelines
+# Flink SQL Toolkit for VS Code Guidelines
 
-Thank you so much for wanting to contribute to Flink SQL Assistant! Here are a few important things you should know about contributing:
+Thank you so much for willing to contribute to Flink SQL Toolkit! Here are a few important things you should know about contributing:
 
   1. Ruleset changes require discussion, use cases, etc. Code comes later.
   2. Pull requests are great for small fixes for bugs, documentation, etc.
