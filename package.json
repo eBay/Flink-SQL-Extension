@@ -295,6 +295,6 @@
 		"dotenv": "^8.2.0",
 		"react": "^17.0.1",
 		"react-vsc-treeview": "^0.2.3",
-		"strip-ansi": "^6.0.0"
+		"strip-ansi": "^6.0.1"
 	}
 }
